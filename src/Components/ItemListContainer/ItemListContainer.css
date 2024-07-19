@@ -1,0 +1,33 @@
+
+
+
+header {
+    background: linear-gradient(to right, #ff0458, #520066);
+    height: 700px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+   
+}
+
+h1 {
+  font-size: 4vmax;  
+  font-family: 'Black Han Sans', sans-serif;
+  margin-top:50px ;
+  font-weight:200;
+  color: rgb(0, 0, 0);
+
+}
+
+.texto-bienvenida {
+    font-family: 'Do Hyeon', sans-serif;
+    margin-top: 6px;
+    font-size: 2vmax;
+}
+
+.logo-header {
+    margin-top: 2vmax;
+    width: 15%;
+}

@@ -17,8 +17,6 @@ function Navbar() {
                 />
                </a>
 
-            
-
                 <div className="links-navbar-contenedor">
                     <ul className="liks-ul-contenedor">
                         <li className="link-item"><a href="">Deportes</a></li>
@@ -30,10 +28,8 @@ function Navbar() {
 
             </div>    
 
-           
             <CartWidget />
             
-
         </nav>
     )
 }
