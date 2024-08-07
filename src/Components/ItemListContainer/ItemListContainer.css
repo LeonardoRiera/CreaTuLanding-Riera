@@ -3,9 +3,9 @@
 
 header {
     background: linear-gradient(to right, #ff0458, #520066);
-    height: 700px;
+    height: 300px;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     justify-content: start;
     align-items: center;
     text-align: center;

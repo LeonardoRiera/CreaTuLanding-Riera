@@ -1,0 +1,24 @@
+.CardItem {
+    border: 2px solid rgb(69, 0, 65);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 1vmax;
+    padding: 3vmax;
+    text-align: center;
+    box-sizing: border-box;
+    width: 25vmax;
+    height: 30vmax;
+    border-radius: 20px;
+    
+   
+}
+
+.ItemMain {
+    margin-bottom:2vmax;
+}
+
+.ItemImg {
+    width: 15vmax;
+}

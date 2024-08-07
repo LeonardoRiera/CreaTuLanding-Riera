@@ -1,0 +1,12 @@
+.ListGroup {
+   border: 2px solid black;
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: center;
+   align-items: center;
+   padding: 4vmax;
+   margin-top: 6vmax;
+
+   
+   
+}
