@@ -2,6 +2,7 @@ import React from "react";
 import '../Navbar/Navbar.css';
 import logoNavbar from '../../img/juniorRowWhite.png';
 import CartWidget from '../CartWidget/CartWidget.jsx';
+import { NavLink, Link } from "react-router-dom";
 
 function Navbar() {
     return (
@@ -9,21 +10,23 @@ function Navbar() {
 
             <div className="logo-links-navbar-contenedor">
 
-               <a href="#">
-               <img 
-                    className="logo-navbar"
-                    src={logoNavbar} 
-                    alt="logo e-commerce" 
-                />
-               </a>
+               <Link to='/'>
+                    
+                    <img 
+                            className="logo-navbar"
+                            src={logoNavbar} 
+                            alt="logo e-commerce" 
+                        />
+                    
+               </Link>
 
-                <div className="links-navbar-contenedor">
-                    <ul className="liks-ul-contenedor">
-                        <li className="link-item"><a href="">Deportes</a></li>
-                        <li className="link-item"><a href="">Moda</a></li>
-                        <li className="link-item"><a href="">Contacto</a></li>
-                        <li className="link-item"><a href="">BlackFriday</a></li>
-                    </ul>
+               
+
+                
+                <div className="Categories">
+                    <NavLink to={`/categoria/mochilas`} className={({ isActive }) => isActive ? 'ActiveOption' : 'PosibleOption'}>Mochilas</NavLink>
+                    <NavLink to={`/categoria/tecnologia`} className={({ isActive }) => isActive ? 'ActiveOption' : 'PosibleOption'}>Tecnología</NavLink>
+                    <NavLink to={`/categoria/accesorios`} className={({ isActive }) => isActive ? 'ActiveOption' : 'PosibleOption'}>Accesorios</NavLink>
                 </div>
 
             </div>    

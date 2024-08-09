@@ -3,12 +3,28 @@ import '../ItemListContainer/ItemListContainer.css';
 import '@fontsource/black-han-sans';
 import '@fontsource/do-hyeon';
 import logoHeader from '../../img/juniorRowBlack.png';
-import { getProducts } from "../../../asyncMock";
+import { getProducts, getProductsByCategory } from "../../../asyncMock";
 import ItemList from '../ItemList/ItemList';
+import { useParams } from 'react-router-dom';
 
 
 function ItemListContainer( { titulo, texto } ) {
     const [products, setProducts] = useState([])
+
+    const { categoriaId } = useParams()
+
+    useEffect(() => {
+        const asyncFunc = categoriaId ? getProductsByCategory : getProducts
+
+        asyncFunc(categoriaId)
+            .then(response => {
+                setProducts(response)
+            })
+            .catch(error => {
+                console.error(error)
+            })
+
+    }, [categoriaId])
 
     useEffect(() => {
         getProducts()
@@ -18,7 +34,7 @@ function ItemListContainer( { titulo, texto } ) {
             .catch(error => {
                 console.error(error)
             })
-    })
+    },[])
 
     return (
         <>
