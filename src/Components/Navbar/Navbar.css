@@ -28,20 +28,24 @@
 
 .link-item {
     list-style: none;
-    padding: 1vmax;
+  
 }
 
-.link-item a {
+.PosibleOption {
     text-decoration: none;
     font-family: sans-serif;
     color: rgb(91, 247, 255);
     font-size: 1.2vmax;
+    padding: 0.7vmax;
         
 }
 
-.link-item a:hover {
+.ActiveOption {
     
     color: rgb(192, 255, 91);
-       
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 1.2vmax; 
+    padding: 0.7vmax  
 }
 

@@ -6,8 +6,10 @@ import { useParams } from 'react-router-dom'
 
 const ItemDetailContainer = () => {
     const [product, setProduct] = useState(null)
-
     const { itemId } = useParams()
+
+
+    
 
     useEffect(() => {
         getProductsById(itemId)
@@ -17,7 +19,7 @@ const ItemDetailContainer = () => {
             .catch(error => {
                 console.error(error)
             })
-    }, [])
+    }, [itemId])
 
     /* {...product}  ...son propiedades del producto */
     return(

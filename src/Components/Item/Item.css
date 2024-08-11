@@ -2,10 +2,10 @@
     border: 2px solid rgb(69, 0, 65);
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     margin: 1vmax;
-    padding: 3vmax;
+    padding: 2cqh;
     text-align: center;
     box-sizing: border-box;
     width: 25vmax;
@@ -16,9 +16,31 @@
 }
 
 .ItemMain {
-    margin-bottom:2vmax;
+    margin-top: 0.5vmax;
+    margin-bottom:0.5vmax;
+    font-size: 1.8vmax;
+    font-family: sans-serif;
+    font-weight: bold;
 }
 
 .ItemImg {
-    width: 15vmax;
+    width: 13vmax;
+}
+
+.precioCantidad {
+
+    margin-bottom: 1vmax;
+
+}
+
+.Option {
+    text-decoration: none;
+    color: rgb(9, 9, 9);
+    font-family: 'Lucida Sans', Arial, sans-serif;
+    border-radius: 5px;
+    padding: 0.5vmax 2vmax;
+    margin-bottom: 2vmax;
+    background-color: rgb(254, 173, 189);
+   
+
 }

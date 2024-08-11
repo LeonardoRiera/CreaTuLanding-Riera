@@ -4,10 +4,10 @@ import ItemCount from '../ItemCount/ItemCount.jsx'
 
 
 
-const ItemDetail = ({ id, nombre, imagen, categoria, descripcion, precio, cantidad }) => {
+const ItemDetail = ({ id, nombre, imagen, categoria, descripcion, precio, cantidad}) => {
 
         return (
-            <article className="CardItem">
+            <article className="CardItem2">
                 <div className="CardItemHeader">
                     <h2 className="ItemTitulo">
                         {nombre}
@@ -16,7 +16,7 @@ const ItemDetail = ({ id, nombre, imagen, categoria, descripcion, precio, cantid
                 <picture>
                     <img src={imagen} alt={nombre} className="ItemImg" />
                 </picture>
-                <section>
+                <section className="cardTexto">
                     <p className="Info">Categoria = {categoria}</p>
                     <p className="Info">Descripcion = {descripcion}</p>
                     <p className="Info">Precio: ${precio}</p>
@@ -24,6 +24,8 @@ const ItemDetail = ({ id, nombre, imagen, categoria, descripcion, precio, cantid
                 <footer className="ItemFooter">
                     <ItemCount initial={1} stock={cantidad} onAdd={(quantity) => console.log('Cantidad Agregada ', quantity)} />
                 </footer>
+                <button className="botonProd">Ver Anterior</button>
+                <button className="botonProd">Ver Siguiente</button>
             </article>
         )
 }
