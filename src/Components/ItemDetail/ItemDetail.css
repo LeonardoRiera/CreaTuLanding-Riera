@@ -3,13 +3,24 @@
    flex-direction: column;
    align-items: center;
    background-color: rgb(255, 231, 145);
+   width: 100%;
 
    
     
 }
 
+.CardItemHeader {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.ItemTitulo {
+    font-size: 3.2vmax;
+}
+
 .ItemImg {
-    width: 15vmax;
+    width: 20vmax;
+    margin-bottom: 5px;
 }
 
 .ItemFooter {
@@ -22,7 +33,24 @@
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   /* padding-left: 10%;
-   padding-right: 10%; */
-   text-align: center;
+   padding: 1vmax; 
+   text-align: justify;
+   width: 40%;
+   background-color: antiquewhite;
+   border-radius: 10px;
+}
+
+.Info {
+    margin-bottom: 8px;
+}
+
+.cambiarProd {
+    display: flex;
+
+
+}
+
+.botonProd {
+    padding: 4px 10px;
+    margin: 10px 10px;
 }

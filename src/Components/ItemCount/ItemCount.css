@@ -1,0 +1,16 @@
+.Controls {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.Controls {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.ButtonContador {
+    padding: 5px 12px;
+}

@@ -1,5 +1,4 @@
 .ListGroup {
-   border: 2px solid black;
    display: flex;
    flex-flow: row wrap;
    justify-content: center;

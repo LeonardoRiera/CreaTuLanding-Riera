@@ -13,7 +13,7 @@ const Item = ({id, nombre, imagen, precio, cantidad}) => {
                 </h2>
             </main>
             <picture>
-                <img src={imagen} alt={nombre} className="ItemImg" />
+                <img src={imagen} alt={nombre} className="ItemImg1" />
             </picture>
             <section className="precioCantidad">
                 <p className="Info">
