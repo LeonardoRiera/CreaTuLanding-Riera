@@ -4,13 +4,19 @@
     align-items: center;
     justify-content: center;
     color: white;
-    width: 10%;
     font-size: 1.2vmax;
+    text-decoration: none;
+    
    
 }
 
+
+
 .Widget-contenedor p {
-    margin-left: 1.5vmax;
+    margin-left: 1vmax;
     font-family: sans-serif;
+    
+
    
 }
+

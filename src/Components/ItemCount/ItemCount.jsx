@@ -4,7 +4,7 @@ import { useState } from "react";
 
 
 
-const ItemCount = ({stock, initial, onAdd})=> {
+const ItemCount = ({stock, initial, onAdd, pulsarComprar})=> {
     const [quantity, setQuantity] = useState(initial)
 
     const increment = () => {
@@ -27,7 +27,7 @@ const ItemCount = ({stock, initial, onAdd})=> {
                 <button className="ButtonContador" onClick={increment}>+</button>
             </div>
             <div>
-                <button className="ButtonContador" onClick={()=> onAdd(quantity)} disabled={!stock}>
+                <button className="ButtonContador" onClick={ ()=> pulsarComprar(quantity)}>
                     Agregar al Carrito
                 </button>
             </div>

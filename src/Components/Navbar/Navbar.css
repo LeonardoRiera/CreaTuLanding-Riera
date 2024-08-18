@@ -1,7 +1,7 @@
 .navbar-contenedor {
     background-color: black;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     align-items: center;
 
 }
@@ -48,4 +48,20 @@
     font-size: 1.2vmax; 
     padding: 0.7vmax  
 }
+
+
+.anchoCart {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: start;
+    color: white;
+    width: 10%;
+    font-size: 1.2vmax;
+    text-decoration: none;
+    margin-left: 20px;
+
+}
+
+
 

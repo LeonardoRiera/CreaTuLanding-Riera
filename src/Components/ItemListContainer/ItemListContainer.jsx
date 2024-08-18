@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import '../ItemListContainer/ItemListContainer.css';
 import '@fontsource/black-han-sans';
 import '@fontsource/do-hyeon';
@@ -6,12 +6,17 @@ import logoHeader from '../../img/juniorRowBlack.png';
 import { getProducts, getProductsByCategory } from "../../../asyncMock";
 import ItemList from '../ItemList/ItemList';
 import { useParams } from 'react-router-dom';
+import { CartContext } from '../../Contex/CartContex';
 
 
 function ItemListContainer( { titulo, texto } ) {
     const [products, setProducts] = useState([])
 
+    const { cart } = useContext(CartContext)
+
     const { categoriaId } = useParams()
+
+   /*  console.log("CARRITO", cart) */
 
     useEffect(() => {
         const asyncFunc = categoriaId ? getProductsByCategory : getProducts

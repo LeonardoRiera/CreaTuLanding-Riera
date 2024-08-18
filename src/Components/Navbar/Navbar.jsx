@@ -4,6 +4,8 @@ import logoNavbar from '../../img/juniorRowWhite.png';
 import CartWidget from '../CartWidget/CartWidget.jsx';
 import { NavLink, Link } from "react-router-dom";
 
+
+
 function Navbar() {
     return (
         <nav className="navbar-contenedor">
@@ -30,8 +32,10 @@ function Navbar() {
                 </div>
 
             </div>    
-
-            <CartWidget />
+            <Link to="/cart/Cart" className="anchoCart" >
+                <CartWidget />
+            </Link>
+            
             
         </nav>
     )
