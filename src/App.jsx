@@ -11,7 +11,6 @@ import { CartContextProvider } from './Contex/CartContex.jsx';
 function App() {
 
   return (
-     /*  <div className="App"> */
 
         <CartContextProvider>
 
@@ -38,7 +37,7 @@ function App() {
 
         </CartContextProvider>    
 
-     /*  </div> */
+  
   )
 }
 

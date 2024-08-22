@@ -32,7 +32,7 @@ const ItemDetail = ({ product, previo, next }) => {
                 <p className="Info">Precio: ${precio}</p>
             </section>
             <footer className="ItemFooter">
-                <ItemCount initial={1} stock={cantidad} /* onAdd={(quantity) => console.log('Cantidad Agregada ', quantity)} */ pulsarComprar={pulsarComprar}/>
+                <ItemCount initial={1} stock={cantidad} pulsarComprar={pulsarComprar}/>
             </footer>
             <div className="cambiarProd">
                 <button className="botonProd" onClick={previo}>Ver Anterior</button>
