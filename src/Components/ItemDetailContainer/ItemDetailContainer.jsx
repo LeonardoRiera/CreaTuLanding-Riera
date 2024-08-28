@@ -1,14 +1,16 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 import '../ItemDetailContainer/ItemDetailContainer.css';
 import { getProductsById, getProducts } from '../../../asyncMock';
 import ItemDetail from '../ItemDetail/ItemDetail';
 import { useParams, useNavigate } from 'react-router-dom';
+import { CartContext } from '../../Contex/CartContex';
 
 const ItemDetailContainer = () => {
     const [product, setProduct] = useState(null);
     const [totalProducts, setTotalProducts] = useState(0);
     const { itemId } = useParams(); // para el ID actual del producto desde la URL
     const navigate = useNavigate(); // este Hook es para redireccionar
+    const { reiniciarCantidad } = useContext(CartContext);
 
     useEffect(() => {
         // Obtenemos todos los productos para conocer el total de productos disponibles
@@ -25,11 +27,13 @@ const ItemDetailContainer = () => {
         getProductsById(Number(itemId))
             .then(response => {
                 setProduct(response);
+                /* reiniciarCantidad(); */
             })
             .catch(error => {
                 console.error(error);
             });
     }, [itemId]);
+    
 
     const previo = () => {
         const newId = Number(itemId) === 1 ? totalProducts : Number(itemId) - 1; // Si el ID es 1, pasa al último producto

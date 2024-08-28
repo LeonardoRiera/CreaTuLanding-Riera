@@ -1,13 +1,16 @@
 import React, { useContext } from "react";
 import { CartContext } from "../../Contex/CartContex";
 import CardItem from "../CardItem/CardItem";
+import './Cart.css'
 
 const Cart = () => {
 
-    const { contexto, cart, vaciarCarrito } = useContext(CartContext)
+    const { contexto, cart, vaciarCarrito, mostrarTotal } = useContext(CartContext)
+
+    
 
     return (
-        <div>
+        <div className="cartContainerPrincipal">
             {
                 cart?.map(e=> {
                     return (
@@ -15,7 +18,11 @@ const Cart = () => {
                     )
                 })
             }
-            <button onClick={vaciarCarrito}>Vaciar Carrito</button>
+            <div className="totalBotones">
+                <button onClick={vaciarCarrito}>Vaciar Carrito</button>
+                <p>`Total: $ {mostrarTotal()} </p>
+                <button /* onClick={comprarTotal} */>Comprar</button>
+            </div>
         </div>
     )
 }

@@ -1,17 +1,23 @@
 import React, { useContext } from 'react'
 import { CartContext } from '../../Contex/CartContex'
+import './CardItem.css'
 
 const CardItem = ({producto}) => {
 
    const {eliminarProducto} = useContext(CartContext)
   return (
-    <div>
-        <h2>{producto.nombre}</h2>
-        <img src={producto.imagen} alt="" />
-        <p>{producto.precio}</p>
-        <p>{producto.quantity}</p>
-        <p>Total: {producto.precio * producto.quantity}</p>
-        <button onClick={()=> eliminarProducto(producto.id)}>Eliminar Producto</button>
+    <div className='carritoContenedor'>
+      
+      <div className='cardItemContainer'>
+
+          <img src={producto.imagen} alt="imagen del producto comprado" />
+          <h2>Producto: {producto.nombre}</h2>
+          
+          <p>Precio (x unid): {producto.precio}</p>
+          <p>Cantidad: {producto.quantity}</p>
+          <p>Total: ${producto.precio * producto.quantity}</p>
+          <button onClick={()=> eliminarProducto(producto.id)}>Eliminar Producto</button>
+      </div>
     </div>
   )
 }

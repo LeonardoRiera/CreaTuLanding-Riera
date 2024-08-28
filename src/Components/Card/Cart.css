@@ -1,0 +1,8 @@
+
+.totalBotones {
+    display: flex;
+    flex-flow: column nowrap;
+    align-self: center;
+    text-align: center;
+   
+}
