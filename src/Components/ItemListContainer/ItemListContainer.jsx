@@ -4,10 +4,11 @@ import '@fontsource/black-han-sans';
 import '@fontsource/do-hyeon';
 import logoHeader from '../../img/juniorRowBlack.png';
 import { getProducts, /* getProductsByCategory */ } from "../../../asyncMock";
+import {productos} from "../../../asyncMock";
 import ItemList from '../ItemList/ItemList';
 import { useParams } from 'react-router-dom';
 import { db } from '../../services/firebaseConfig';
-import { collection, getDocs, query, where } from 'firebase/firestore';
+import { collection, getDocs, query, where, addDoc } from 'firebase/firestore';
 
 
 
@@ -18,6 +19,8 @@ function ItemListContainer( { titulo, texto } ) {
 
     const { categoria } = useParams()
 
+   
+    
    
     
 
@@ -31,6 +34,7 @@ function ItemListContainer( { titulo, texto } ) {
             .catch(error => {
                 console.error(error)
             }) */
+
 
         if(categoria){
             const prodsPorCat = query(collection(db, "productos"), where("categoria", "==", categoria))

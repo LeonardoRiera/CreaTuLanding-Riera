@@ -10,7 +10,7 @@ import { getDoc, doc, getDocs, collection } from 'firebase/firestore';
 const ItemDetailContainer = () => {
     const [product, setProduct] = useState(null);
     const [totalProducts, setTotalProducts] = useState(0);
-    
+    const [products, setProducts] = useState([]); 
     const { itemId } = useParams(); // para el ID actual del producto desde la URL
     const navigate = useNavigate(); // este Hook es para redireccionar
     
@@ -53,16 +53,37 @@ const ItemDetailContainer = () => {
 
 
     }, [itemId]);
+
+
+
+
+    useEffect(() => {
+        // Función para obtener todos los productos
+        const fetchAllProducts = async () => {
+            try {
+                const prodsRef = collection(db, "productos");
+                const snapshot = await getDocs(prodsRef);
+                const prods = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+                setProducts(prods);
+            } catch (error) {
+                console.error("Error fetching products: ", error);
+            }
+        };
+
+        fetchAllProducts();
+    }, []);
     
    
-    const previo = () => {
-        const newId = Number(itemId) === 1 ? totalProducts : Number(itemId) - 1; // Si el ID es 1, pasa al último producto
-        navigate(`/item/${newId}`); // Cambia la URL con el nuevo ID
+      const previo = () => {
+        const currentIndex = products.findIndex(prod => prod.id === itemId);
+        const newIndex = currentIndex === 0 ? products.length - 1 : currentIndex - 1;
+        navigate(`/item/${products[newIndex].id}`);
     };
 
     const next = () => {
-        const newId = Number(itemId) === totalProducts ? 1 : Number(itemId) + 1; // Si el ID es el último, pasa al primer producto
-        navigate(`/item/${newId}`); // Cambia la URL con el nuevo ID
+        const currentIndex = products.findIndex(prod => prod.id === itemId);
+        const newIndex = currentIndex === products.length - 1 ? 0 : currentIndex + 1;
+        navigate(`/item/${products[newIndex].id}`);
     };
 
     if (!product) {
