@@ -23,7 +23,7 @@ function App() {
               texto=" Todo lo que necesitas para estar siempre en movimiento."
               />} 
               />
-              <Route path='/categoria/:categoriaId' element={< ItemListContainer 
+              <Route path='/categoria/:categoria' element={< ItemListContainer 
                 titulo="Bienvenidos a Junior Sport!"
                 texto=" Todo lo que necesitas para estar siempre en movimiento."
               />} />

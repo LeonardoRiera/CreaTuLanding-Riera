@@ -5,7 +5,7 @@ import './Cart.css'
 
 const Cart = () => {
 
-    const { contexto, cart, vaciarCarrito, mostrarTotal } = useContext(CartContext)
+    const { cart, vaciarCarrito, mostrarTotal } = useContext(CartContext)
 
     
 
