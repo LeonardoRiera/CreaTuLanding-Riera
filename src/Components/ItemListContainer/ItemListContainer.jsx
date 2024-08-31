@@ -3,7 +3,7 @@ import '../ItemListContainer/ItemListContainer.css';
 import '@fontsource/black-han-sans';
 import '@fontsource/do-hyeon';
 import logoHeader from '../../img/juniorRowBlack.png';
-import { getProducts, /* getProductsByCategory */ } from "../../../asyncMock";
+
 import {productos} from "../../../asyncMock";
 import ItemList from '../ItemList/ItemList';
 import { useParams } from 'react-router-dom';

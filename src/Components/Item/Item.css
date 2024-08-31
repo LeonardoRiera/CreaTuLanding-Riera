@@ -9,10 +9,15 @@
     text-align: center;
     box-sizing: border-box;
     width: 25vmax;
-    height: 30vmax;
+    height: 32vmax;
     border-radius: 20px;
+    background-color: rgba(250, 235, 215, 0.174);
     
    
+}
+
+.linea {
+    color: rgb(69, 0, 65); 
 }
 
 .ItemMain {
@@ -25,13 +30,9 @@
 
 .ItemImg1 {
     width: 14vmax;
+    padding: 1.2vmax;
 }
 
-.precioCantidad {
-
-    margin-bottom: 1vmax;
-
-}
 
 .Option {
     text-decoration: none;
@@ -39,8 +40,13 @@
     font-family: 'Lucida Sans', Arial, sans-serif;
     border-radius: 5px;
     padding: 0.5vmax 2vmax;
-    margin-bottom: 2vmax;
+    
     background-color: rgb(254, 173, 189);
+
    
 
+}
+
+.itemFooter {
+    margin-bottom: 3vmax;
 }

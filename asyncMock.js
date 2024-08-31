@@ -145,11 +145,11 @@ export const productos = [
     }
 ]
 
-export const getProducts = () => {
+/* export const getProducts = () => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       resolve(productos)
-      /* reject(console.error("error")) */
+      
     }, 2000)
   } )
 }
@@ -170,4 +170,4 @@ export const getProductsByCategory= (categoria) => {
     }, 500)
   } )
 }
-
+ */

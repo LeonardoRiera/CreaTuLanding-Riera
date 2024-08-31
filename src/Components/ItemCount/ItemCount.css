@@ -9,8 +9,38 @@
 .Controls {
     margin-top: 20px;
     margin-bottom: 10px;
+    /* display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+     */
+}
+
+
+.botonesAlCarrito {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .ButtonContador {
     padding: 5px 12px;
+    margin-bottom: 1vmax;
+}
+
+.Counter {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 20vmax;
+
+}
+
+.botonIrCarrito {
+    padding: 5px 12px;
+}
+
+.Number {
+    margin: 0 1vmax;
 }

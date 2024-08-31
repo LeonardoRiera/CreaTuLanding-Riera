@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import '../ItemDetail/ItemDetail.css';
 import ItemCount from '../ItemCount/ItemCount.jsx';
 import { CartContext } from "../../Contex/CartContex.jsx";
+import { Link } from "react-router-dom";
 
 
 
@@ -33,21 +34,27 @@ const ItemDetail = ({ product, previo, next }) => {
                     {nombre}
                 </h2>
             </div>
-            <picture>
-                <img src={imagen} alt={nombre} className="ItemImg" />
-            </picture>
-            <section className="cardTexto">
-                <p className="Info">Categoría: {categoria}</p>
-                <p className="Info">Descripción: {descripcion}</p>
-                <p className="Info">Precio: ${precio}</p>
-            </section>
-            <footer className="ItemFooter">
-                <ItemCount initial={quantity} stock={cantidad} pulsarComprar={pulsarComprar}/>
-            </footer>
-            <div className="cambiarProd">
-                <button className="botonProd" onClick={funcionalidadBotonesPrevio}>Ver Anterior</button>
-                <button className="botonProd" onClick={funcionalidadBotonesNext}>Ver Siguiente</button>
+            <div className="pikInfoContainer">
+                <picture>
+                    <img src={imagen} alt={nombre} className="ItemImg" />
+                </picture>
+                <section className="cardTexto">
+                    <p className="Info">Categoría: {categoria}</p>
+                    <p className="Info">Descripción: {descripcion}</p>
+                    <p className="Info">Precio: ${precio}</p>
+
+                    <div className="ItemFooter">
+                    <ItemCount initial={quantity} stock={cantidad} pulsarComprar={pulsarComprar}/>
+                    </div>
+                    
+                </section>
             </div>
+            
+            <div className="cambiarProd">
+                <button className="botonProd" onClick={funcionalidadBotonesPrevio}>Producto Anterior</button>
+                <button className="botonProd" onClick={funcionalidadBotonesNext}>Producto Siguiente</button>
+            </div>
+            <Link to='/' className="botAncor"><button className="botonProd2">Volver al Inicio</button></Link>
         </article>
     );
 }

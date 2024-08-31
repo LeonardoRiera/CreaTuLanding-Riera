@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useContext } from 'react';
 import '../ItemDetailContainer/ItemDetailContainer.css';
-import { getProductsById, getProducts } from '../../../asyncMock';
+/* import { getProductsById, getProducts } from '../../../asyncMock'; */
 import ItemDetail from '../ItemDetail/ItemDetail';
 import { useParams, useNavigate } from 'react-router-dom';
 /* import { CartContext } from '../../Contex/CartContex'; */

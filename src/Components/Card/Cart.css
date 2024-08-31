@@ -1,8 +1,45 @@
 
+.cartContainerPrincipal {
+    margin-top: 5vmax;
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    background-color: rgb(223, 223, 223);
+}
+
+
 .totalBotones {
     display: flex;
     flex-flow: column nowrap;
+    justify-content: center;
     align-self: center;
     text-align: center;
    
+}
+
+.vaciarCarrito {
+    padding: 4px 10px;
+    margin:25px 10px 10px 10px;
+    width: 8vmax;
+}
+
+.carrito {
+    font-size: 4vmax;
+    margin: 2vmax 0;
+}
+
+.carrito2 {
+    font-size: 2vmax;
+   
+}
+
+.botonComprar {
+    padding: 4px 10px;
+    margin:25px 10px 40px 10px;
+    width: 8vmax;
+}
+
+.total {
+    font-size: 2vmax;
+    font-family: sans-serif;
 }

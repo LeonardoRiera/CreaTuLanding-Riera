@@ -1,11 +1,13 @@
 import React, { useContext } from "react";
 import "../ItemCount/ItemCount.css";
 import { CartContext } from "../../Contex/CartContex";
+import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 
 
 const ItemCount = ({stock, pulsarComprar})=> {
-    const { quantity, setQuantity} = useContext(CartContext)
+    const { quantity, setQuantity, cart, reiniciarCantidad} = useContext(CartContext)
 
     const increment = () => {
         if(quantity < stock) {
@@ -19,17 +21,25 @@ const ItemCount = ({stock, pulsarComprar})=> {
         }
     }
 
+    useEffect(() => {
+        reiniciarCantidad();
+    }, [])
+
     return(
         <div className="Counter">
+            <h4>Cantidad</h4>
             <div className="Controls">
+                
                 <button className="ButtonContador" onClick={decrement}>-</button>
                 <h4 className="Number">{quantity}</h4>
                 <button className="ButtonContador" onClick={increment}>+</button>
             </div>
-            <div>
+            <div className="botonesAlCarrito">
                 <button className="ButtonContador" onClick={ ()=> pulsarComprar(quantity)}>
                     Agregar al Carrito
                 </button>
+                {cart.length > 0 && 
+                <Link to='/cart/Cart' >  <button className="botonIrCarrito">Ir al Carrito</button></Link>}
             </div>
         </div>
 

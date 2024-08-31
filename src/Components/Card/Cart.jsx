@@ -12,6 +12,7 @@ const Cart = () => {
 
     return (
         <div className="cartContainerPrincipal">
+            <h4 className="carrito">Carrito de Compras</h4>
             {
                 cart?.map(e=> {
                     return (
@@ -20,15 +21,19 @@ const Cart = () => {
                 })
             }
             <div className="totalBotones">
-            {cart.length > 0 && 
-            <>
+                {cart.length > 0 ? 
+                <div>
 
-                <button onClick={vaciarCarrito}>Vaciar Carrito</button>
-                <p>`Total: $ {mostrarTotal()} </p>
+                    <button onClick={vaciarCarrito} className="vaciarCarrito">Vaciar Carrito</button>
+                    <p className="total">Total: $ {mostrarTotal()} </p>
 
-                 <Link to='/CheckOut'>  <button>Comprar</button>
-                </Link>
-             </>    
+                    <Link to='/CheckOut'><button className="botonComprar">Comprar</button></Link>
+                </div>
+                : 
+                <>
+                    <h4 className="carrito2">Tu Carrito está Vacío!!</h4>
+                    <Link to='/'><button className="botonComprar">Volver a Inicio</button></Link>
+                </>     
                 }
                 
             </div>

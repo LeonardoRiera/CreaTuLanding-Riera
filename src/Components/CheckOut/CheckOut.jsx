@@ -2,6 +2,8 @@ import React, { useContext, useState } from 'react'
 import { CartContext } from '../../Contex/CartContex'
 import { addDoc, collection } from 'firebase/firestore'
 import { db } from '../../services/firebaseConfig'
+import { Link } from 'react-router-dom'
+import './CheckOut.css'
 
 
 const Checkout = () => {
@@ -29,7 +31,7 @@ const Checkout = () => {
         }
 
         
-
+        /* enviar formulario a firebase */
         const orderRef = collection(db, "ordenes")
         const orderID = await addDoc(orderRef, orden)
 
@@ -44,29 +46,32 @@ const Checkout = () => {
     }
 
 
-    console.log("ORDEN", orden)
+   
     if (orden) {
         return (
-            <h1>
-                Gracias por tu elegirnos, el id de tu compra es {orden}
-            </h1>
+            < div className='checkoutIdCompra'>
+                <h3>
+                    Gracias por tu elegirnos, Tu pedido está siendo despachado, el id de tu compra es <br></br> {orden}
+                </h3>
+                <Link to='/'>  <button>Volver al Inicio</button></Link>
+            </div>
         )
     }
 
 
     return (
-        <div>
-            <h3>Ingresa los datos para terminar tu compra</h3>
+        <div className='checkoutContainer'>
+            <h3 className='tituloFinDeCompra'>Ingresa los datos para terminar tu compra</h3>
 
             <form className='form' onSubmit={(e) => handleSubmit(e)}>
 
-                <label htmlFor="nombre">  Nombre  </label>
-                <input type="text" name='nombre'  onChange={(e) => setNombre(e.target.value)} />
-                <label htmlFor="email">  Email  </label>
-                <input type="email" name='email' onChange={(e) => setMail(e.target.value)} />
-                <label htmlFor="direccion"> Dirección </label>
-                <input type="text" name='direccion' onChange={(e) => setDireccion(e.target.value)} />
-                <button type='submit' disabled={isSumbmiting}  > Enviar </button>
+                <label htmlFor="nombre" className='formularioDatos'>  Nombre  </label>
+                <input type="text" name='nombre'  onChange={(e) => setNombre(e.target.value)} className='formularioDatosT' />
+                <label htmlFor="email" className='formularioDatos'>  Email  </label>
+                <input type="email" name='email' onChange={(e) => setMail(e.target.value)} className='formularioDatosT' />
+                <label htmlFor="direccion" className='formularioDatos'> Dirección </label>
+                <input type="text" name='direccion' onChange={(e) => setDireccion(e.target.value)}  className='formularioDatosT'/>
+                <button type='submit' disabled={isSumbmiting} className='botonFormularioDatos' > Enviar </button>
             </form>
         </div>
     )

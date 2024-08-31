@@ -1,0 +1,41 @@
+.checkoutContainer {
+    margin-top: 10vmax;
+    margin-left: 2vmax;
+    padding: 20px;
+    display: flex;
+    flex-flow:column ;
+}
+
+.tituloFinDeCompra{
+    color: blueviolet;
+    margin-bottom: 0.5vmax;
+    width: 30vmax;
+}
+
+.checkoutIdCompra {
+    margin-top: 5vmax;
+}
+
+.form {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 40%;
+}
+
+.formularioDatos {
+    margin-bottom: 0.8vmax;
+}
+
+.formularioDatosT {
+    margin-bottom: 0.5vmax;
+    width: 30vmax;
+    height: 3vmax;
+    padding: 1vmax;
+    font-size: 1vmax;
+}
+
+.botonFormularioDatos {
+    width: 8vmax;
+    margin: 2vmax 0;
+    height: 2vmax;
+}
