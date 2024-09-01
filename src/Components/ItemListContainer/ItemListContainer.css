@@ -3,7 +3,7 @@
 
 header {
     background: linear-gradient(to right, #ff0458, #520066);
-    height: 300px;
+    height: 45vmax;
     display: flex;
     flex-flow: column nowrap;
     justify-content: start;
@@ -11,24 +11,77 @@ header {
     text-align: center;
     margin-top: 5vmax;
    
+   
 }
 
-h1 {
-  font-size: 4vmax;  
-  font-family: 'Black Han Sans', sans-serif;
-  margin-top:50px ;
-  font-weight:200;
-  color: rgb(0, 0, 0);
 
+
+h1 {
+  font-size: 8vmax;  
+  font-family: "Passion One", sans-serif;
+  
+  margin-right: 3vmax;
+  font-weight:200;
+  color: rgb(255, 255, 255);
+  text-shadow: 
+    4px 4px 10px rgba(0, 0, 0, 0.7),   /* Sombra principal */
+    8px 8px 20px rgba(0, 0, 0, 0.5);  /* Sombra secundaria */
+   
+
+}
+
+.ola {
+    position: absolute;
+    top: 30vmax;
+}
+
+.headerCont {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.tituloH1 {
+    margin-right: 5vmax;
+    margin-bottom: 5vmax;
 }
 
 .texto-bienvenida {
     font-family: 'Do Hyeon', sans-serif;
-    margin-top: 6px;
+    color: white;
     font-size: 2vmax;
+    text-shadow: 
+    4px 4px 10px rgba(0, 0, 0, 0.7),   /* Sombra principal */
+    8px 8px 20px rgba(0, 0, 0, 0.5);  /* Sombra secundaria */
+    
 }
 
 .logo-header {
-    margin-top: 2vmax;
-    width: 15%;
+    margin-bottom:6vmax;
+    margin-right: 1vmax;
+    width: 25%;
+    animation: pulse 3s infinite ease-in-out, moveShadow 3s infinite ease-in-out;
+    z-index: 0;
+}
+
+/* Animación de pulso */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+
+/* Animación de movimiento de sombra */
+@keyframes moveShadow {
+    0%, 100% {
+        filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.7)); /* Sombra inicial */
+    }
+    50% {
+        filter: drop-shadow(8px 8px 20px rgba(0, 0, 0, 0.9)); /* Sombra durante la animación */
+    }
 }

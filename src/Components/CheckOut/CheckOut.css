@@ -1,15 +1,41 @@
 .checkoutContainer {
+    display: flex;
+    flex-flow: row nowrap;
     margin-top: 10vmax;
+    margin-bottom: 10vmax;
+    justify-content: center;
+    height: 35vmax;
+    border-radius: 10px;
+    
+}
+
+
+.formContainer {
+   
     margin-left: 2vmax;
     padding: 20px;
     display: flex;
     flex-flow:column ;
+    background-color: rgb(233, 233, 233);
+    width: 35%;
+    border-radius: 10px 0 10px 0;
+}
+
+.complementoForm {
+    width: 35%;
+    background: linear-gradient(to right ,#520066, #ff0458 );
+    border-radius: 0 10px 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .tituloFinDeCompra{
     color: blueviolet;
     margin-bottom: 0.5vmax;
     width: 30vmax;
+    margin-top: 2vmax;
+    margin-left: 3vmax;
 }
 
 .checkoutIdCompra {
@@ -20,6 +46,8 @@
     display: flex;
     flex-flow: column nowrap;
     width: 40%;
+    margin-left: 3vmax;
+    margin-top: 2vmax;
 }
 
 .formularioDatos {
@@ -28,7 +56,7 @@
 
 .formularioDatosT {
     margin-bottom: 0.5vmax;
-    width: 30vmax;
+    width: 25vmax;
     height: 3vmax;
     padding: 1vmax;
     font-size: 1vmax;
@@ -38,4 +66,8 @@
     width: 8vmax;
     margin: 2vmax 0;
     height: 2vmax;
+}
+
+.solologo {
+    width:60%;
 }

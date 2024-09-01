@@ -1,0 +1,41 @@
+/* Footer.css */
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    height: 20vmax;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-logo {
+    width: 30vmax; 
+    margin-bottom: 15px;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-info h4 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.footer-info p {
+    margin: 5px 0;
+    font-size: 1em;
+}

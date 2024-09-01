@@ -2,7 +2,8 @@ import React, { useContext, useEffect, useState } from 'react'
 import '../ItemListContainer/ItemListContainer.css';
 import '@fontsource/black-han-sans';
 import '@fontsource/do-hyeon';
-import logoHeader from '../../img/juniorRowBlack.png';
+import logoHeader from '../../img/structure.png';
+
 
 import {productos} from "../../../asyncMock";
 import ItemList from '../ItemList/ItemList';
@@ -73,19 +74,27 @@ function ItemListContainer( { titulo, texto } ) {
     },[]) */
 
     return (
-        <>
-            <header>
-                <h1>{titulo}</h1>
-                <p className="texto-bienvenida">{texto}</p>
+        <div className='backPrincipal'>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className='ola'>
+             <path fill="#DFDFDF" fillOpacity="1" d="M0,192L80,213.3C160,235,320,277,480,277.3C640,277,800,235,960,224C1120,213,1280,235,1360,245.3L1440,256L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+            </svg>
+            <header className='headerCont'>
+
+            <   div className='tituloH1'>
+                    <h1>{titulo}</h1>
+                    <p className="texto-bienvenida">{texto}</p>
+               </div>
                 <img
                     className="logo-header" 
                     src={logoHeader}
                     alt="logo e-commerce negro" 
                 />
+               
+                
                 
             </header>
             <ItemList products={products} />
-        </>
+        </div>
     )
 }
 

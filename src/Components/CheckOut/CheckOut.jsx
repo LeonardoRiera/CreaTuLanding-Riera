@@ -4,6 +4,7 @@ import { addDoc, collection } from 'firebase/firestore'
 import { db } from '../../services/firebaseConfig'
 import { Link } from 'react-router-dom'
 import './CheckOut.css'
+import solologo from '../../img/solologo.png'
 
 
 const Checkout = () => {
@@ -61,18 +62,25 @@ const Checkout = () => {
 
     return (
         <div className='checkoutContainer'>
-            <h3 className='tituloFinDeCompra'>Ingresa los datos para terminar tu compra</h3>
+           
+            <div className='formContainer'>
+                <h3 className='tituloFinDeCompra'>Ingresa los datos para terminar tu compra</h3>
 
-            <form className='form' onSubmit={(e) => handleSubmit(e)}>
+                <form className='form' onSubmit={(e) => handleSubmit(e)}>
 
-                <label htmlFor="nombre" className='formularioDatos'>  Nombre  </label>
-                <input type="text" name='nombre'  onChange={(e) => setNombre(e.target.value)} className='formularioDatosT' />
-                <label htmlFor="email" className='formularioDatos'>  Email  </label>
-                <input type="email" name='email' onChange={(e) => setMail(e.target.value)} className='formularioDatosT' />
-                <label htmlFor="direccion" className='formularioDatos'> Dirección </label>
-                <input type="text" name='direccion' onChange={(e) => setDireccion(e.target.value)}  className='formularioDatosT'/>
-                <button type='submit' disabled={isSumbmiting} className='botonFormularioDatos' > Enviar </button>
-            </form>
+                    <label htmlFor="nombre" className='formularioDatos'>  Nombre  </label>
+                    <input type="text" name='nombre'  onChange={(e) => setNombre(e.target.value)} className='formularioDatosT' />
+                    <label htmlFor="email" className='formularioDatos'>  Email  </label>
+                    <input type="email" name='email' onChange={(e) => setMail(e.target.value)} className='formularioDatosT' />
+                    <label htmlFor="direccion" className='formularioDatos'> Dirección </label>
+                    <input type="text" name='direccion' onChange={(e) => setDireccion(e.target.value)}  className='formularioDatosT'/>
+                    <button type='submit' disabled={isSumbmiting} className='botonFormularioDatos' > Enviar </button>
+                </form>
+            </div>
+
+            <div className='complementoForm'>
+                <img src={solologo} alt="logo solo" className='solologo' />
+            </div>
         </div>
     )
 }

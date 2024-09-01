@@ -7,6 +7,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Cart from './Components/Card/Cart.jsx';
 import { CartContextProvider } from './Contex/CartContex.jsx';
 import CheckOut from './Components/CheckOut/CheckOut.jsx';
+import Footer from './Components/Footer/Footer.jsx';
+import logo from './img/logo-travel-devs.png'
 
 
 function App() {
@@ -20,19 +22,20 @@ function App() {
             <Navbar />
             <Routes>
               <Route path='/' element={< ItemListContainer 
-              titulo="Bienvenidos a Junior Sport!"
-              texto=" Todo lo que necesitas para estar siempre en movimiento."
+              titulo="Travel Devs"
+              texto="Soluciones Reales para Nomades Digitales."
               />} 
               />
               <Route path='/categoria/:categoria' element={< ItemListContainer 
-                titulo="Bienvenidos a Junior Sport!"
-                texto=" Todo lo que necesitas para estar siempre en movimiento."
+                titulo="Travel Devs"
+                texto=" Soluciones Reales para Nomades Digitales."
               />} />
               <Route path='/item/:itemId' element={<ItemDetailContainer/>} />
               <Route path='/CheckOut' element={<CheckOut/>} />
               <Route path='/cart/Cart' element={<Cart/>} />
               <Route path='' element={<h1>404 NOT FOUND</h1>} />
             </Routes>
+            <Footer/>
 
 
           </BrowserRouter>

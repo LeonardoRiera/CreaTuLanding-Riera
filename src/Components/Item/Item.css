@@ -12,8 +12,13 @@
     height: 32vmax;
     border-radius: 20px;
     background-color: rgba(250, 235, 215, 0.174);
+    transition: transform 0.3s ease;
     
    
+}
+
+.CardItem:hover {
+    transform: scale(1.02);
 }
 
 .linea {
