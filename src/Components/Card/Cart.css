@@ -5,6 +5,7 @@
     flex-flow: column nowrap;
     text-align: center;
     background-color: rgb(223, 223, 223);
+    margin-bottom: 5vmax;
 }
 
 
@@ -37,6 +38,19 @@
     padding: 4px 10px;
     margin:25px 10px 40px 10px;
     width: 8vmax;
+}
+
+.botonInicio {
+    padding: 8px 12px;
+    margin:25px 10px 40px 10px;
+    width: 10vmax;
+    background: linear-gradient(to right, #ff0458b1, #520066af);
+    border-radius: 5px;
+    border: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:rgb(20, 20, 20);
+    font-size: 1.1vmax;
+    font-weight: bold;
 }
 
 .total {

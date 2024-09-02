@@ -3,9 +3,11 @@
    flex-flow: row wrap;
    justify-content: center;
    align-items: center;
-   padding: 4vmax;
+   padding: 4vmax ;
    
    background-color: rgb(223, 223, 223);
+   /* border: 2px solid black; */
+   
 
    
    

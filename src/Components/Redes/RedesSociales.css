@@ -1,0 +1,35 @@
+.redesContainer  {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: black;
+    padding: 0.6vmax;
+    border-radius: 0 10px 10px 0;
+    z-index: 2000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.redesContainer a {
+    display: block;
+    margin: 0.5vmax 0 0.5vmax 0;
+    text-align: center;
+
+}
+
+.redesContainer img {
+    width: 1.8vmax;
+    height: 1.8vmax;
+    transition: transform 0.3s ease;
+
+}
+
+.redesContainer img:hover {
+    transform: scale(1.1);
+
+
+}

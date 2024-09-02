@@ -80,7 +80,7 @@ function ItemListContainer( { titulo, texto } ) {
             </svg>
             <header className='headerCont'>
 
-            <   div className='tituloH1'>
+                <div className='tituloH1'>
                     <h1>{titulo}</h1>
                     <p className="texto-bienvenida">{texto}</p>
                </div>
@@ -94,6 +94,8 @@ function ItemListContainer( { titulo, texto } ) {
                 
             </header>
             <ItemList products={products} />
+            
+           
         </div>
     )
 }

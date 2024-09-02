@@ -8,7 +8,7 @@ import Cart from './Components/Card/Cart.jsx';
 import { CartContextProvider } from './Contex/CartContex.jsx';
 import CheckOut from './Components/CheckOut/CheckOut.jsx';
 import Footer from './Components/Footer/Footer.jsx';
-import logo from './img/logo-travel-devs.png'
+import RedesSociales from './Components/Redes/RedesSociales.jsx';
 
 
 function App() {
@@ -20,6 +20,7 @@ function App() {
           <BrowserRouter>
 
             <Navbar />
+            <RedesSociales />
             <Routes>
               <Route path='/' element={< ItemListContainer 
               titulo="Travel Devs"

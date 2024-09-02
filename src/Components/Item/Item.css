@@ -1,5 +1,5 @@
 .CardItem {
-    border: 2px solid rgb(69, 0, 65);
+    border: 1.6px solid rgb(199, 199, 199);
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
@@ -11,7 +11,7 @@
     width: 25vmax;
     height: 32vmax;
     border-radius: 20px;
-    background-color: rgba(250, 235, 215, 0.174);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.744), #e3e2e2ca);
     transition: transform 0.3s ease;
     
    

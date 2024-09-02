@@ -32,7 +32,7 @@ const Cart = () => {
                 : 
                 <>
                     <h4 className="carrito2">Tu Carrito está Vacío!!</h4>
-                    <Link to='/'><button className="botonComprar">Volver a Inicio</button></Link>
+                    <Link to='/'><button className="botonInicio">Volver a Inicio</button></Link>
                 </>     
                 }
                 

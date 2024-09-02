@@ -1,7 +1,8 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   color: rgb(0, 0, 0);
-  background-color: #ffffff;
+  background-color: rgb(223, 223, 223);
+  height: 100%;
 
 }
 

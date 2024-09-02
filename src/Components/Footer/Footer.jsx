@@ -6,6 +6,7 @@ import logo from '../../img/logo-travel-devs.png'
 const Footer = () => {
     return (
         <footer className="footer">
+            
             <div className="footer-content">
                 <img src={logo} alt="Logo" className="footer-logo" />
                 <div className="footer-info">
