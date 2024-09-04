@@ -1,7 +1,8 @@
 import React, { useContext } from "react";
 import { CartContext } from "../../Contex/CartContex";
 import CardItem from "../CardItem/CardItem";
-import './Cart.css'
+import './Cart.css';
+import tarjetas from '../../img/tarjetas.png'
 import { Link } from "react-router-dom";
 
 const Cart = () => {
@@ -22,17 +23,18 @@ const Cart = () => {
             }
             <div className="totalBotones">
                 {cart.length > 0 ? 
-                <div>
+                <div className="compraContainer">
 
-                    <button onClick={vaciarCarrito} className="vaciarCarrito">Vaciar Carrito</button>
+                    <button onClick={vaciarCarrito} className="vaciarCarrito botonSecundario">Vaciar Carrito</button>
                     <p className="total">Total: $ {mostrarTotal()} </p>
+                    <img src={tarjetas} alt="tarjetas" className="tarjetas" />
 
-                    <Link to='/CheckOut'><button className="botonComprar">Comprar</button></Link>
+                    <Link to='/CheckOut'><button className="botonComprar botonGeneral">Comprar</button></Link>
                 </div>
                 : 
                 <>
                     <h4 className="carrito2">Tu Carrito está Vacío!!</h4>
-                    <Link to='/'><button className="botonInicio">Volver a Inicio</button></Link>
+                    <Link to='/'><button className="botonGeneral botonInicio "><span>Volver a Inicio</span></button></Link>
                 </>     
                 }
                 

@@ -10,50 +10,165 @@
 
 
 .totalBotones {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-self: center;
-    text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
    
 }
 
 .vaciarCarrito {
-    padding: 4px 10px;
-    margin:25px 10px 10px 10px;
-    width: 8vmax;
+  margin:25px 10px 10px 10px;
+    
 }
 
 .carrito {
-    font-size: 4vmax;
-    margin: 2vmax 0;
+  font-size: 4vmax;
+  margin: 2vmax 0;
 }
 
 .carrito2 {
-    font-size: 2vmax;
+  font-size: 2vmax;
    
 }
 
 .botonComprar {
-    padding: 4px 10px;
-    margin:25px 10px 40px 10px;
-    width: 8vmax;
-}
-
-.botonInicio {
-    padding: 8px 12px;
-    margin:25px 10px 40px 10px;
-    width: 10vmax;
-    background: linear-gradient(to right, #ff0458b1, #520066af);
-    border-radius: 5px;
-    border: none;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color:rgb(20, 20, 20);
-    font-size: 1.1vmax;
-    font-weight: bold;
+  margin:25px 10px 40px 10px;    
 }
 
 .total {
-    font-size: 2vmax;
-    font-family: sans-serif;
+  font-size: 2vmax;
+  font-family: sans-serif;
+  margin-top: 2vmax;
 }
+
+.botonInicio {
+  margin:25px 10px 40px 10px;    
+}
+
+
+
+
+
+
+
+
+
+
+/* Estilo del botón */
+.botonGeneral {
+    background: linear-gradient(45deg,#ff3aa0d9, #ff0458b1, #520066af); /* Degradado de color */
+    color: #fff; /* Color del texto */
+    border: none; /* Sin bordes */
+    padding: 8px 22px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    font-size: 1.1vmax; /* Tamaño de la fuente */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: all 0.4s ease; /* Transición suave para efectos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 12px 24px rgba(0, 0, 0, 0.2); /* Sombra para efecto 3D */
+    position: relative; /* Posición relativa para el efecto glow */
+    overflow: hidden; /* Oculta el contenido que se sale del botón */
+    transform: perspective(500px); /* Perspectiva para el efecto 3D */
+    text-decoration: none;
+  }
+  
+  /* Efecto de brillo (glow) */
+  .botonGeneral::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.179); /* Brillo blanco sutil */
+    opacity: 0;
+    transition: all 0.5s ease;
+    transform: rotate(45deg);
+  }
+  
+  /* Efecto hover */
+  .botonGeneral:hover {
+    background: linear-gradient(45deg, #ff4f8c, #9c0075); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4), 0 24px 48px rgba(0, 0, 0, 0.3); 
+  }
+  
+  .botonGeneral:hover::before {
+    opacity: 1;
+    top: -120%;
+    left: -120%;
+  }
+  
+  /* Efecto active (cuando se presiona el botón) */
+  .botonGeneral:active {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3), 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra menos intensa */
+    transform: translateY(2px); /* Efecto de presionar el botón */
+  }
+
+
+
+  /* boton secundario */
+  .botonSecundario {
+    background: linear-gradient(45deg,#282828c2, #000000bf, #000000fe); /* Degradado de color */
+    color: #fff; /* Color del texto */
+    border: none; /* Sin bordes */
+    padding: 8px 22px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    font-size: 1.1vmax; /* Tamaño de la fuente */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: all 0.4s ease; /* Transición suave para efectos */
+    box-shadow: 0 8px 5px rgba(0, 0, 0, 0.147); /* Sombra para efecto 3D */
+    position: relative; /* Posición relativa para el efecto glow */
+    overflow: hidden; /* Oculta el contenido que se sale del botón */
+    transform: perspective(500px); /* Perspectiva para el efecto 3D */
+    text-decoration: none;
+  }
+  
+  /* Efecto de brillo (glow) */
+  .botonSecundario::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.179); /* Brillo blanco sutil */
+    opacity: 0;
+    transition: all 0.5s ease;
+    transform: rotate(45deg);
+  }
+  
+  /* Efecto hover */
+  .botonSecundario:hover {
+    background: linear-gradient(45deg, #fd0a5f, #600048); 
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.264); 
+  }
+  
+  .botonSecundario:hover::before {
+    opacity: 1;
+    top: -120%;
+    left: -120%;
+  }
+  
+  /* Efecto active (cuando se presiona el botón) */
+  .botonSecundario:active {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3), 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra menos intensa */
+    transform: translateY(2px); /* Efecto de presionar el botón */
+  }
+  
+
+  .tarjetas {
+    width: 14vmax;
+    margin-top: 2vmax;
+  }
+
+  .compraContainer {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+

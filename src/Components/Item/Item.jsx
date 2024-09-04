@@ -28,7 +28,7 @@ const Item = ({id, nombre, imagen, precio, cantidad}) => {
                 <hr></hr>
             </section>
             <div className="ItemFooter">
-                <Link to={`/item/${id}`} className='Option'>Ver Detalle</Link>
+                <Link to={`/item/${id}`} className='botonGeneral'>Ver Detalle</Link>
             </div>
         </article>
     )

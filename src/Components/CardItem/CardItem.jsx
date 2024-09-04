@@ -16,7 +16,7 @@ const CardItem = ({producto}) => {
           <p>Precio (x unid): {producto.precio}</p>
           <p>Cantidad: {producto.quantity}</p>
           <p>Total: ${producto.precio * producto.quantity}</p>
-          <button onClick={()=> eliminarProducto(producto.id)}>Eliminar Producto</button>
+          <button onClick={()=> eliminarProducto(producto.id)} className='botonSecundario'>Eliminar</button>
       </div>
     </div>
   )

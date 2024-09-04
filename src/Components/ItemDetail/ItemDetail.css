@@ -32,7 +32,6 @@
   justify-content: center;
   align-items: start;
   height: 25vmax;
-  /* border: solid 2px rgb(48, 48, 48); */
 }
 
 .ItemImg {
@@ -47,7 +46,7 @@
 .ItemFooter {
     display: flex;
     flex-flow: row nowrap;
-    margin-top: 2vmax;
+   
 }
 
 .cardTexto {
@@ -66,30 +65,31 @@
 .Info {
     margin-bottom: 12px;
     padding: 0 3vmax;
+    font-size: 1.2vmax;
     
 }
 
 .cambiarProd {
     display: flex;
-    margin-right: 41%;
-    margin-top: 1vmax;
+    margin-right: 43%;
     margin-bottom: 1vmax;
+   
 
 
 }
 
 .botonProd {
-    padding: 4px 10px;
-    margin: 4px 10px;
+    
+    margin: 1vmax 0 2vmax 0;
 }
 
-.botAncor{
-    margin: 0 41vmax 5vmax 0;
-}
 
 .botonProd2 {
-    padding: 4px 10px;
+    
+    
+    margin: 1vmax 0 0 2vmax;
     
     
 }
+
 

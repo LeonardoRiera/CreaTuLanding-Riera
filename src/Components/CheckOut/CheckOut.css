@@ -38,17 +38,31 @@
     margin-top: 2vmax;
     margin-left: 3vmax;
 }
-
+/* entrege de id */
 .checkoutIdCompra {
     margin-top: 5vmax;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 30vmax;
 }
+
+.mensajeCheckOut {
+    font-size: 1.6vmax;
+    margin-bottom: 3vmax;
+    line-height: 2;
+    padding: 0 5vmax;
+} 
 
 .form {
     display: flex;
     flex-flow: column nowrap;
-    width: 40%;
+    align-items: start;
     margin-left: 3vmax;
     margin-top: 2vmax;
+    
 }
 
 .formularioDatos {
@@ -64,11 +78,20 @@
 }
 
 .botonFormularioDatos {
-    width: 8vmax;
-    margin: 2vmax 0;
-    height: 2vmax;
+    width: 40%;
+    margin: 2vmax 5vmax 0 0;
+   align-self: center;
 }
 
 .solologo {
     width:60%;
 }
+
+.idFinal {
+    background-color: aqua;
+    padding: 0.5vmax 1vmax;
+}
+
+
+
+

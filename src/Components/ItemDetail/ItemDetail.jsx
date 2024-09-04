@@ -51,10 +51,10 @@ const ItemDetail = ({ product, previo, next }) => {
             </div>
             
             <div className="cambiarProd">
-                <button className="botonProd" onClick={funcionalidadBotonesPrevio}>Producto Anterior</button>
-                <button className="botonProd" onClick={funcionalidadBotonesNext}>Producto Siguiente</button>
+                <button className="botonProd2 botonSecundario" onClick={funcionalidadBotonesPrevio}>Anterior</button>
+                <button className="botonProd2 botonSecundario" onClick={funcionalidadBotonesNext}>Siguiente</button>
             </div>
-            <Link to='/' className="botAncor"><button className="botonProd2">Volver al Inicio</button></Link>
+            <Link to='/'><button className="botonSecundario botonProd">Volver al Inicio</button></Link>
         </article>
     );
 }

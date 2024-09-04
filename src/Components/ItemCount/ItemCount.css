@@ -19,13 +19,20 @@
 .botonesAlCarrito {
     display: flex;
     flex-flow: column wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+
 }
 
 .ButtonContador {
-    padding: 5px 12px;
+   
     margin-bottom: 1vmax;
+    padding: 0.2vmax 0.6vmax;
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
 }
 
 .Counter {
@@ -37,10 +44,14 @@
 
 }
 
-.botonIrCarrito {
+/* .botonIrCarrito {
     padding: 5px 12px;
-}
+} */
 
 .Number {
     margin: 0 1vmax;
+}
+
+.botCorrect  {
+    margin-bottom: 1vmax;
 }

@@ -51,10 +51,11 @@ const Checkout = () => {
     if (orden) {
         return (
             < div className='checkoutIdCompra'>
-                <h3>
-                    Gracias por tu elegirnos, Tu pedido está siendo despachado, el id de tu compra es <br></br> {orden}
+                <h3 className='mensajeCheckOut'>
+                    Gracias por tu elegirnos, <br></br> Tu pedido está siendo despachado,<br></br> el id de tu compra es <br></br>
+                    <span className='idFinal'>{orden}</span>
                 </h3>
-                <Link to='/'>  <button>Volver al Inicio</button></Link>
+                <Link to='/' className='linkCheckOut'><button className='botonGeneral '>Volver al Inicio</button ></Link>
             </div>
         )
     }
@@ -74,7 +75,7 @@ const Checkout = () => {
                     <input type="email" name='email' onChange={(e) => setMail(e.target.value)} className='formularioDatosT' />
                     <label htmlFor="direccion" className='formularioDatos'> Dirección </label>
                     <input type="text" name='direccion' onChange={(e) => setDireccion(e.target.value)}  className='formularioDatosT'/>
-                    <button type='submit' disabled={isSumbmiting} className='botonFormularioDatos' > Enviar </button>
+                    <button type='submit' disabled={isSumbmiting} className='botonFormularioDatos botonGeneral' > Enviar </button>
                 </form>
             </div>
 
