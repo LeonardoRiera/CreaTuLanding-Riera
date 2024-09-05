@@ -1,9 +1,7 @@
 import React, { useEffect, useState, useContext } from 'react';
 import '../ItemDetailContainer/ItemDetailContainer.css';
-/* import { getProductsById, getProducts } from '../../../asyncMock'; */
 import ItemDetail from '../ItemDetail/ItemDetail';
 import { useParams, useNavigate } from 'react-router-dom';
-/* import { CartContext } from '../../Contex/CartContex'; */
 import { db } from '../../services/firebaseConfig';
 import { getDoc, doc, getDocs, collection } from 'firebase/firestore';
 
@@ -15,27 +13,8 @@ const ItemDetailContainer = () => {
     const navigate = useNavigate(); // este Hook es para redireccionar
     
 
-   /*  useEffect(() => {
-        // Obtenemos todos los productos para conocer el total de productos disponibles
-        getProducts()
-            .then(products => {
-                setTotalProducts(products.length);
-            })
-            .catch(error => {
-                console.error(error);
-            });
-    }, []); */
-
-
     useEffect(() => {
-       /*  getProductsById(Number(itemId))
-            .then(response => {
-                setProduct(response);
-                
-            })
-            .catch(error => {
-                console.error(error);
-            }); */
+       
             const fetchProduct = async () => {
                 try{
                     const productoRef = doc(db, "productos", itemId)

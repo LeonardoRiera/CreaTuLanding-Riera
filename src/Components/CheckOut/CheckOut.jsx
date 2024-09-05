@@ -13,7 +13,8 @@ const Checkout = () => {
     const [mail, setMail] = useState("")
     const [direccion, setDireccion] = useState("")
     const [orden, setOrden] = useState("")
-    const [isSumbmiting, setIsSubmiting] =  useState(false)
+    const [isSubmiting, setIsSubmiting] =  useState(false)
+    const [error, setError] = useState("")
 
     const { cart, setCart } = useContext(CartContext)
    
@@ -32,19 +33,25 @@ const Checkout = () => {
             cart, usuario
         }
 
-       /*  if(!nombre || !mail || !direccion  ){
-            
-        } */
+    
+        // Validación de campos
+        if (!nombre || !mail || !direccion) {
+            setError("Por favor, completa todos los campos.");  // Mostrar mensaje de error
+            setIsSubmiting(false);  // Rehabilitar el botón de enviar
+            return;
+        }
 
-        
+        setError(""); 
+
+
+
         /* enviar formulario a firebase */
         const orderRef = collection(db, "ordenes")
         const orderID = await addDoc(orderRef, orden)
         
         setOrden(orderID.id)
         setIsSubmiting(false)
-        console.log(orderID)
-
+        
         setDireccion("")
         setMail("")
         setNombre("")
@@ -52,7 +59,7 @@ const Checkout = () => {
     }
 
 
-   
+    /* retorno anticipado */
     if (orden) {
         return (
             < div className='checkoutIdCompra'>
@@ -80,8 +87,8 @@ const Checkout = () => {
                     <input type="email" name='email' onChange={(e) => setMail(e.target.value)} className='formularioDatosT' />
                     <label htmlFor="direccion" className='formularioDatos'> Dirección </label>
                     <input type="text" name='direccion' onChange={(e) => setDireccion(e.target.value)}  className='formularioDatosT'/>
-                    
-                    <button type='submit' disabled={isSumbmiting} className='botonFormularioDatos botonGeneral' > Enviar </button>
+                    {error && <p className="error-message">{error}</p>}
+                    <button type='submit' disabled={isSubmiting} className='botonFormularioDatos botonGeneral' > Enviar </button>
                     
                 </form>
             </div>

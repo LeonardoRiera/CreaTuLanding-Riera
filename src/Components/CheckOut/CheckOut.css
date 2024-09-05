@@ -5,14 +5,10 @@
     margin-bottom: 10vmax;
     justify-content: center;
     height: 35vmax;
-    border-radius: 10px;
-    
-    
+    border-radius: 10px;    
 }
 
-
 .formContainer {
-   
     margin-left: 2vmax;
     padding: 20px;
     display: flex;
@@ -38,7 +34,8 @@
     margin-top: 2vmax;
     margin-left: 3vmax;
 }
-/* entrege de id */
+
+/* entrega de id */
 .checkoutIdCompra {
     margin-top: 5vmax;
     display: flex;
@@ -61,8 +58,7 @@
     flex-flow: column nowrap;
     align-items: start;
     margin-left: 3vmax;
-    margin-top: 2vmax;
-    
+    margin-top: 2vmax;    
 }
 
 .formularioDatos {

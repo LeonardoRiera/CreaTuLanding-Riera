@@ -18,18 +18,14 @@
     display: block;
     margin: 0.5vmax 0 0.5vmax 0;
     text-align: center;
-
 }
 
 .redesContainer img {
     width: 1.8vmax;
     height: 1.8vmax;
     transition: transform 0.3s ease;
-
 }
 
 .redesContainer img:hover {
     transform: scale(1.1);
-
-
 }

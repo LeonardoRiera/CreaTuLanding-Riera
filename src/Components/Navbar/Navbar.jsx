@@ -12,19 +12,14 @@ function Navbar() {
 
             <div className="logo-links-navbar-contenedor">
 
-               <Link to='/'>
-                    
+               <Link to='/'>    
                     <img 
                             className="logo-navbar"
                             src={logoNavbar} 
                             alt="logo e-commerce" 
-                        />
-                    
+                        />    
                </Link>
 
-               
-
-                
                 <div className="Categories">
                     <NavLink to={`/categoria/mochilas`} className={({ isActive }) => isActive ? 'ActiveOption' : 'PosibleOption'}>Mochilas</NavLink>
                     <NavLink to={`/categoria/tecnologia`} className={({ isActive }) => isActive ? 'ActiveOption' : 'PosibleOption'}>Tecnología</NavLink>

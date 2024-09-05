@@ -12,9 +12,7 @@
     height: 32vmax;
     border-radius: 20px;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.744), #e3e2e2ca);
-    transition: transform 0.3s ease;
-    
-   
+    transition: transform 0.3s ease;   
 }
 
 .CardItem:hover {

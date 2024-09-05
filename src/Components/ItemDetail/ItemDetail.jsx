@@ -25,8 +25,6 @@ const ItemDetail = ({ product, previo, next }) => {
     next();
    }
 
-      
-
     return (
         <article className="CardItem2">
             <div className="CardItemHeader">

@@ -5,18 +5,11 @@
     justify-content: center;
     color: white;
     font-size: 1.2vmax;
-    text-decoration: none;
-    
-   
+    text-decoration: none; 
 }
-
-
 
 .Widget-contenedor p {
     margin-left: 1vmax;
-    font-family: sans-serif;
-    
-
-   
+    font-family: sans-serif;       
 }
 

@@ -1,4 +1,3 @@
-/* Footer.css */
 .footer {
     background-color: #000;
     color: #fff;
@@ -8,17 +7,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-   
-  
+    flex-direction: column;  
 }
 
 .footer-content {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    
+    flex-direction: column;    
 }
 
 .footer-logo {
@@ -35,6 +31,7 @@
 .footer-info h4 {
     margin: 0;
     font-size: 1.5em;
+    letter-spacing: 2px;
 }
 
 .footer-info p {

@@ -8,24 +8,17 @@
 
 .Controls {
     margin-top: 20px;
-    margin-bottom: 10px;
-    /* display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-     */
+    margin-bottom: 10px;    
 }
-
 
 .botonesAlCarrito {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
     align-items: center;
-
 }
 
-.ButtonContador {
-   
+.ButtonContador {   
     margin-bottom: 1vmax;
     padding: 0.2vmax 0.6vmax;
     color: white;
@@ -41,12 +34,7 @@
     justify-content: center;
     align-items: center;
     width: 20vmax;
-
 }
-
-/* .botonIrCarrito {
-    padding: 5px 12px;
-} */
 
 .Number {
     margin: 0 1vmax;

@@ -10,8 +10,7 @@ const Item = ({id, nombre, imagen, precio, cantidad}) => {
             <main className="Main">
                 <h2 className="ItemMain">
                     {nombre}
-                </h2>
-                
+                </h2>    
             </main>
             
             <picture>
