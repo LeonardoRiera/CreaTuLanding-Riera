@@ -24,12 +24,12 @@ function App() {
             <Routes>
               <Route path='/' element={< ItemListContainer 
               titulo="Travel Devs"
-              texto="Soluciones Reales para Nomades Digitales."
+              texto="Soluciones Reales para Nómades Digitales."
               />} 
               />
               <Route path='/categoria/:categoria' element={< ItemListContainer 
                 titulo="Travel Devs"
-                texto=" Soluciones Reales para Nomades Digitales."
+                texto=" Soluciones Reales para Nómades Digitales."
               />} />
               <Route path='/item/:itemId' element={<ItemDetailContainer/>} />
               <Route path='/CheckOut' element={<CheckOut/>} />

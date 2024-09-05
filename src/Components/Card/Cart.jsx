@@ -26,8 +26,11 @@ const Cart = () => {
                 <div className="compraContainer">
 
                     <button onClick={vaciarCarrito} className="vaciarCarrito botonSecundario">Vaciar Carrito</button>
-                    <p className="total">Total: $ {mostrarTotal()} </p>
-                    <img src={tarjetas} alt="tarjetas" className="tarjetas" />
+                    <p className="total">El Total de su Compra es: ......... $ {mostrarTotal()} </p>
+                    <div className="metodosDePago">
+                        <p>métodos de Pago disponibles</p>
+                        <img src={tarjetas} alt="tarjetas" className="tarjetas" />
+                    </div>
 
                     <Link to='/CheckOut'><button className="botonComprar botonGeneral">Comprar</button></Link>
                 </div>

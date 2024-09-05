@@ -11,8 +11,8 @@ const Footer = () => {
                 <img src={logo} alt="Logo" className="footer-logo" />
                 <div className="footer-info">
                     <h4>Soluciones Reales para Nómadas Digitales</h4>
-                    <p>Address: 1234 Street Name, City, Country ( ...y alrededor del mundo!)</p>
-                    <p>Phone: +123 456 7890</p>
+                    <p>Dirección: Hipolito Irigoyen 1234, Córdoba, Argentina ( ...y alrededor del mundo!)</p>
+                    <p>Celular: +358 456 7890</p>
                 </div>
             </div>
         </footer>

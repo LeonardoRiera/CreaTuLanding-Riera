@@ -39,12 +39,11 @@
 
 .total {
   font-size: 2vmax;
-  font-family: sans-serif;
-  margin-top: 2vmax;
+  margin-top: 4vmax;
 }
 
 .botonInicio {
-  margin:25px 10px 40px 10px;    
+  margin:25px 10px 30px 10px;    
 }
 
 
@@ -157,9 +156,13 @@
   }
   
 
+  .metodosDePago {
+    margin-top: 2vmax;
+
+  }
   .tarjetas {
     width: 14vmax;
-    margin-top: 2vmax;
+    
   }
 
   .compraContainer {
