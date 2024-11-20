@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useContext } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../ItemDetailContainer/ItemDetailContainer.css';
 import ItemDetail from '../ItemDetail/ItemDetail';
 import { useParams, useNavigate } from 'react-router-dom';
@@ -7,7 +7,6 @@ import { getDoc, doc, getDocs, collection } from 'firebase/firestore';
 
 const ItemDetailContainer = () => {
     const [product, setProduct] = useState(null);
-    const [totalProducts, setTotalProducts] = useState(0);
     const [products, setProducts] = useState([]); 
     const { itemId } = useParams(); // para el ID actual del producto desde la URL
     const navigate = useNavigate(); // este Hook es para redireccionar
@@ -53,7 +52,7 @@ const ItemDetailContainer = () => {
     }, []);
     
    
-      const previo = () => {
+    const previo = () => {
         const currentIndex = products.findIndex(prod => prod.id === itemId);
         const newIndex = currentIndex === 0 ? products.length - 1 : currentIndex - 1;
         navigate(`/item/${products[newIndex].id}`);

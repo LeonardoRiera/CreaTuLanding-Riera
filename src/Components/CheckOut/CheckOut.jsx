@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useState, useEffect } from 'react'
 import { CartContext } from '../../Contex/CartContex'
 import { addDoc, collection } from 'firebase/firestore'
 import { db } from '../../services/firebaseConfig'
@@ -8,6 +8,11 @@ import solologo from '../../img/solologo.png'
 
 
 const Checkout = () => {
+
+    // Este useEffect asegura que la página se desplace hacia arriba al cargar el componente, me encanto!!
+    useEffect(() => {
+    window.scrollTo(0, 0);
+    }, []); // El array vacío indica que se ejecutará solo al montar el componente
 
     const [nombre, setNombre] = useState("")
     const [mail, setMail] = useState("")
