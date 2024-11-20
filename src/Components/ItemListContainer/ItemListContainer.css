@@ -294,8 +294,15 @@ h1 {
 @media screen and (max-width:431px) {
 
     .ola {
-        top: 50vmax;
+        top: 49vmax;
        
+       
+    }
+
+    .logo-header {
+        margin-bottom:4vmax;
+       /*  margin-right: 1vmax; */
+        width: 32%;
        
     }
     
@@ -306,14 +313,12 @@ h1 {
 @media screen and (max-width:415px) {
 
     .ola {
-        top: 47.5vmax;
+        top: 49vmax;
        
        
     }
 
     .logo-header {
-        margin-bottom:6vmax;
-        margin-right: 1vmax;
         width: 30%;
        
     }
@@ -326,7 +331,7 @@ h1 {
 @media screen and (max-width:393px) {
  
     .ola {
-        top: 49.3vmax;
+        top: 48.6vmax;
        
        
     }
