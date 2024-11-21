@@ -1,6 +1,6 @@
 header {
     background: linear-gradient(to right, #ff0458, #520066);
-    height: 45vmax;
+    height: 44vmax;
     display: flex;
     flex-flow: column nowrap;
     justify-content: start;
@@ -22,7 +22,7 @@ h1 {
 
 .ola {
     position: absolute;
-    top: 30vmax;
+    top: 33vmax;
     filter: drop-shadow(0px -20px 12px rgba(0, 0, 0, 0.204)); 
 }
 
@@ -128,7 +128,7 @@ h1 {
 @media screen and (max-width:885px)  {
 
     .ola {
-        top: 30vmax;
+        top: 36vmax;
        
     }
     
@@ -145,7 +145,7 @@ h1 {
 
    
     .ola {
-        top: 35vmax;
+        top: 37vmax;
        
     }
     
@@ -172,7 +172,11 @@ h1 {
 @media screen and (max-width:768px) {
 
     
-   
+    .ola {
+        top: 38vmax;
+       
+    }
+    
   
 }
 
@@ -200,11 +204,11 @@ h1 {
 
 /* ++++++++++++++++++++++++ media query |  pantalla sm   | ++++++++++++++++++++++++++++++++++*/
 
-@media screen and (max-width:576px) {
+@media screen and (max-width:582px) {
 
     
     .ola {
-        top: 36.5vmax;
+        top: 39vmax;
        
        
     }
@@ -215,6 +219,10 @@ h1 {
 /* ++++++++++++++++++++++++ media query  | pantalla personal |   ++++++++++++++++++++++++++++++++++*/
 
 @media screen and (max-width:500px) {
+
+    header {
+      overflow: hidden;   
+    }
 
     .headerCont{
         display: flex;
@@ -228,6 +236,9 @@ h1 {
 
     .ola {
         top: 45vmax;
+       
+        
+      
        
        
     }
@@ -268,12 +279,6 @@ h1 {
 
 @media screen and (max-width:470px) {
 
-    .ola {
-        top: 48vmax;
-        
-       
-       
-    }
    
 }
 
@@ -281,11 +286,6 @@ h1 {
 
 @media screen and (max-width:440px) {
 
-    .ola {
-        top: 46vmax;
-       
-       
-    }
     
 }
 
@@ -293,11 +293,22 @@ h1 {
 
 @media screen and (max-width:431px) {
 
-    .ola {
-        top: 49vmax;
-       
+  
+
+    .logo-header {
+        margin-bottom:4vmax;
+       /*  margin-right: 1vmax; */
+        width: 32%;
        
     }
+    
+}
+
+
+/* ++++++++++++++++++++++++ media query  | pantalla moviles varios |   ++++++++++++++++++++++++++++++++++*/
+
+@media screen and (max-width:429px) {
+
 
     .logo-header {
         margin-bottom:4vmax;
@@ -312,11 +323,7 @@ h1 {
 
 @media screen and (max-width:415px) {
 
-    .ola {
-        top: 49vmax;
-       
-       
-    }
+    
 
     .logo-header {
         width: 30%;
@@ -326,12 +333,14 @@ h1 {
 }
 
 
+
+
 /* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/
 
-@media screen and (max-width:393px) {
+@media screen and (max-width:380px) {
  
     .ola {
-        top: 48.6vmax;
+        top: 50vmax;
        
        
     }
@@ -340,13 +349,16 @@ h1 {
 
 /* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/
 
-@media screen and (max-width:376px) {
+@media screen and (max-width:377px) {
  
-    .ola {
-        top: 48vmax;
-       
-       
-    }
+   
+    
+}
+
+/* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/
+
+@media screen and (max-width:361px) {
+ 
     
 }
 
@@ -359,6 +371,16 @@ h1 {
        
        
     }
+    
+ 
+    
+}  
+
+/* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/
+
+@media screen and (max-width:322px) {
+   
+    
     
  
     

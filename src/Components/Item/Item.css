@@ -37,6 +37,12 @@
 }
 
 
+
+
+
+
+
+
 /* ++++++++++++++++++++++++ media query |  pantalla gigante |   ++++++++++++++++++++++++++++++++++*/
 
 @media screen and (max-width:2220px) {
@@ -100,7 +106,13 @@
 
 @media screen and (max-width:835px)  {
 
-   
+    .CardItem {
+        margin: 1vmax;
+        padding: 2cqh;
+        width: 26vmax;
+        height: 35vmax;
+         
+    }
     
     
     
@@ -125,6 +137,14 @@
 
 @media screen and (max-width:768px) {
 
+    .CardItem {
+        margin: 2vmax;
+        padding: 2cqh;
+        width: 30vmax;
+        height: 35vmax;
+        z-index: 2;
+         
+    }
     
    
     
@@ -176,7 +196,10 @@
 
 @media screen and (max-width:481px) {
 
-    
+    .ItemImg1 {
+        width: 20vmax;
+        padding: 1.2vmax;
+    }
    
 }
 
@@ -193,7 +216,14 @@
 
 @media screen and (max-width:391px) {
  
-   
+    .CardItem {
+        margin: 2vmax;
+        padding: 2cqh;
+        width: 42vmax;
+        height: 58vmax;
+        
+         
+    }
 }
 
 /* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/

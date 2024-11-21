@@ -54,11 +54,11 @@
 
 @media screen and (max-width:885px)  {
 
-    .ListGroup {
-        padding: 5vmax ;
-        gap: 3.5vmax;
+   .ListGroup {
+      padding: 5vmax ;
+      gap: 3.5vmax;
          
-     }
+   }
 
     
         
@@ -71,7 +71,11 @@
 @media screen and (max-width:835px)  {
 
    
-    
+   .ListGroup {
+      padding: 2vmax ;
+      gap: 1vmax;
+         
+   }
     
     
         
