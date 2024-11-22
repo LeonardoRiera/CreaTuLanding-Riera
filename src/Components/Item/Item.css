@@ -196,8 +196,18 @@
 
 @media screen and (max-width:481px) {
 
+    .CardItem {
+        margin: 2vmax;
+        padding: 2cqh;
+        width: 30vmax;
+        height: 45vmax;
+        z-index: 2;
+         
+    }
+    
+
     .ItemImg1 {
-        width: 20vmax;
+        width: 17vmax;
         padding: 1.2vmax;
     }
    
@@ -219,8 +229,8 @@
     .CardItem {
         margin: 2vmax;
         padding: 2cqh;
-        width: 42vmax;
-        height: 58vmax;
+        width: 38vmax;
+        height: 52vmax;
         
          
     }

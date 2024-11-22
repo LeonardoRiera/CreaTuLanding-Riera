@@ -9,7 +9,7 @@ function CartWidget() {
     return (
 
        <div className="Widget-contenedor">
-         <FaShoppingCart />
+         <FaShoppingCart className="carrito" />
          <p>{mostrarCantidad()}</p>
 
         </div> 

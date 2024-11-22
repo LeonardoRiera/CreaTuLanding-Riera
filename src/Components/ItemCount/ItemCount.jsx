@@ -27,7 +27,7 @@ const ItemCount = ({stock, pulsarComprar})=> {
 
     return(
         <div className="Counter">
-            <h4>Cantidad</h4>
+            <h4 className="tituloDeCantidad">Cantidad</h4>
             <div className="Controls">
                 
                 <button className="ButtonContador" onClick={decrement}>-</button>
@@ -39,7 +39,7 @@ const ItemCount = ({stock, pulsarComprar})=> {
                     Agregar al Carrito
                 </button>
                 {cart.length > 0 && 
-                <Link to='/cart/Cart' ><button className="botonSecundario">Ir al Carrito</button></Link>}
+                <Link to='/cart/Cart' ><button className="botonSecundario modificacion">Ir al Carrito</button></Link>}
             </div>
         </div>
 

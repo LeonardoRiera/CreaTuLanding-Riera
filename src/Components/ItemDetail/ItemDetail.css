@@ -5,7 +5,9 @@
    align-items: center;
    background-color: rgb(223, 223, 223);
    width: 100%;
-   margin-top: 5vmax;    
+   margin-top: 5vmax; 
+   padding-top: 1vmax;  
+  
 }
 
 .CardItemHeader {
@@ -14,8 +16,8 @@
 }
 
 .ItemTitulo {
-    font-size: 3.2vmax;
-    margin-bottom: 2vmax;
+    font-size: 3vmax;
+    margin-bottom: 1vmax;
 }
 
 /* bloque imagen - texto */
@@ -25,11 +27,11 @@
   flex-flow: row wrap;
   justify-content: center;
   align-items: start;
-  height: 25vmax;
+  height: 25max;
 }
 
 .ItemImg {
-    width: 25vmax;
+    width: 27vmax;
     padding: 4vmax;
     border-radius: 10px 0 0 10px;
     background-color: rgba(0, 0, 0, 0.122);   
@@ -45,7 +47,7 @@
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   padding: 1vmax; 
+   padding: 0.5vmax 1vmax; 
    text-align: justify;
    width: 40%;
    background-color: rgb(239, 239, 239);
@@ -56,7 +58,7 @@
 .Info {
     margin-bottom: 12px;
     padding: 0 3vmax;
-    font-size: 1.2vmax;
+    font-size: 1vmax;
     
 }
 
@@ -67,12 +69,12 @@
 }
 
 .botonProd {    
-    margin: 1vmax 0 2vmax 0;
+    margin: -2vmax 0 5vmax 0;
 }
 
 
 .botonProd2 {    
-    margin: 1vmax 0 0 2vmax;    
+    margin: 0.5vmax 0 0 2vmax;    
 }
 
 
@@ -114,7 +116,7 @@
   
  
     .botonProd2 {    
-        margin: 6.9vmax 0 0 2vmax;    
+        margin: 1vmax 0 0 2vmax;    
     }
     
 }
@@ -137,7 +139,14 @@
     }
 
     .botonProd2 {    
-        margin: 6.3vmax 0 0 2vmax;    
+        margin: 2vmax 0 0 2vmax;    
+    }
+
+    .Info {
+        margin-bottom: 12px;
+        padding: 0 3vmax;
+        font-size: 1.2vmax;
+        
     }
     
 
@@ -150,7 +159,21 @@
 @media screen and (max-width:885px)  {
 
    
+    .CardItem2 {
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        background-color: rgb(223, 223, 223);
+        width: 100%;
+        margin-top: 5vmax; 
+        padding: 11vmax 0;  
+       
+    }
 
+    .botonProd {    
+        margin: -2vmax 0 5vmax 28vmax;
+    }
     
         
 }
@@ -206,9 +229,15 @@
 
 /* ++++++++++++++++++++++++ media query |  pantalla personalizada   | ++++++++++++++++++++++++++++++++++*/
 
-@media screen and (max-width:636px) {
+@media screen and (max-width:581px) {
+
+    .Info {
+        margin-bottom: 12px;
+        padding: 0 3vmax;
+        font-size: 0.9vmax;
+        
+    }
     
-  
 }
 
 
@@ -218,16 +247,92 @@
 
 @media screen and (max-width:576px) {
 
+    .ItemTitulo {
+        font-size: 4vmax;
+        margin-bottom: 2vmax;
+    }
+
+    .pikInfoContainer {
+        flex-flow: column;
+        align-items: center;
+        height: 25max;
+    }
+
+   
+
+    .cardTexto {
+        padding: 1.5vmax 1vmax; 
+        width: 54%;
+        border-radius: 0 0 10px 10px;
+        height: 100%;
+    }
+
+    .Info {
+        margin-bottom: 12px;
+        padding: 0 3vmax;
+        font-size: 1.5vmax;
+        
+    } .ItemImg {
+
+        width: 34vmax;
+        height: 34vmax;
+        align-self: center;
+        padding: 4vmax;
+        border-radius: 10px 10px 0 0;
+        
+    }
+
+    .cambiarProd {
+        margin-right: 0;
+        margin-bottom: 1vmax;
+        gap: 4vmax;
+    }
+
+    .botonProd2 {    
+        margin: 4vmax 0 0 0; 
+        font-size: 1.5vmax !important;   
+    }
+
+    .botonProd {    
+        margin: 6vmax 0 5vmax 0;
+        font-size: 1.5vmax !important; 
+        padding: 1.5vmax 10vmax !important;
+    }
+
+    .modificacion {
+        font-size: 1.5vmax !important; 
+    }
+    
     
     
 
+}
+
+/* ++++++++++++++++++++++++ media query  | pantalla movile varias |   ++++++++++++++++++++++++++++++++++*/
+
+@media screen and (max-width:574px) {
+
+
+    .ItemImg {
+
+        width: 37.2vmax;
+        height: 37.2vmax;
+       
+        
+    }
+   
 }
 
 /* ++++++++++++++++++++++++ media query  | pantalla personal |   ++++++++++++++++++++++++++++++++++*/
 
 @media screen and (max-width:543px) {
 
-   
+    .ItemImg {
+
+        width: 36vmax;
+        height: 36vmax;
+        
+    }
     
     
 }
@@ -235,7 +340,13 @@
 
 /* ++++++++++++++++++++++++ media query  | pantalla movile varias |   ++++++++++++++++++++++++++++++++++*/
 
-@media screen and (max-width:481px) {
+@media screen and (max-width:527px) {
+
+    .cardTexto {
+        padding: 1.5vmax 1vmax; 
+        width: 58%;
+        
+    }
 
     
    
@@ -243,17 +354,59 @@
 
 /* ++++++++++++++++++++++++ media query  | pantalla moviles varios |   ++++++++++++++++++++++++++++++++++*/
 
-@media screen and (max-width:469px) {
+@media screen and (max-width:481px) {
 
-    
+    .ItemImg {
+
+        width: 35vmax;
+        height: 35vmax;
+        
+    }
+
+    .cardTexto {
+        padding: 1.5vmax 1vmax; 
+        width: 76%;
+        
+    }
     
 }
+
+/* ++++++++++++++++++++++++ media query  | pantallas |   ++++++++++++++++++++++++++++++++++*/
+
+@media screen and (max-width:470px) {
+ 
+    .ItemImg {
+
+        width: 36vmax;
+        height: 36vmax;
+        
+    }
+
+    .cardTexto {
+        padding: 1.5vmax 1vmax; 
+        width: 70%;
+        
+    }
+}
+
 
 
 /* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/
 
 @media screen and (max-width:391px) {
- 
+    .cardTexto {
+        padding: 1.5vmax 1vmax; 
+        width: 77.2%;
+        
+    }
+
+    .ItemImg {
+
+        width: 38vmax;
+        height: 38vmax;
+        
+    }
+
    
 }
 

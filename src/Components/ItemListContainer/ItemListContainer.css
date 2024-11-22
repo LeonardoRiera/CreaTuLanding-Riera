@@ -173,7 +173,7 @@ h1 {
 
     
     .ola {
-        top: 38vmax;
+        top: 37vmax;
        
     }
     
@@ -236,20 +236,16 @@ h1 {
 
     .ola {
         top: 45vmax;
-       
-        
       
-       
-       
     }
 
     h1 {
-        font-size: 10vmax;   
+        font-size: 9vmax;   
         margin-right: 0;
     }    
     
     .texto-bienvenida {
-        font-size: 2.5vmax;
+        font-size: 2.2vmax;
          
     }
 
@@ -311,7 +307,7 @@ h1 {
 
 
     .logo-header {
-        margin-bottom:4vmax;
+        margin-bottom:3.5vmax;
        /*  margin-right: 1vmax; */
         width: 32%;
        
@@ -338,7 +334,8 @@ h1 {
 /* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/
 
 @media screen and (max-width:380px) {
- 
+    
+   
     .ola {
         top: 50vmax;
        
@@ -365,6 +362,17 @@ h1 {
 /* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/
 
 @media screen and (max-width:325px) {
+
+    .tituloH1 {
+        margin-right: 0;
+        margin-bottom:1vmax;
+        margin-top: 4vmax;
+    }
+
+    .logo-header {
+        width: 22%;
+       
+    }
    
     .ola {
         top: 50vmax;
