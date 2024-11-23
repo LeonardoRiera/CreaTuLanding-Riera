@@ -10,6 +10,18 @@
 
 }
 
+
+/* contenedor del id */
+.checkoutIdCompra {
+    height: 60vmax;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 5vmax 0;
+}
+
 /* contenedor del elemento */
 .checkoutContainer {
     display: flex;
@@ -168,6 +180,15 @@
         font-size: 1.4vmax;
     }
 
+    /* section id final */
+
+        
+    .checkoutIdCompra {
+        height: 40vmax;
+        padding: 5vmax 0;
+    }
+
+
    
 
 }
@@ -200,6 +221,23 @@
         width: 50%;
         margin-top: 2.5vmax;
        
+    }
+
+    /* section id final */
+
+        
+    .checkoutIdCompra {
+        height: 60vmax;
+        padding: 5vmax 0;
+    }
+
+    .mensajeCheckOut {
+        font-size: 2.5vmax;
+    }
+
+    .btnVolver {
+        padding: 1vmax 8vmax !important;
+        font-size: 1.8vmax;
     }
 }
 

@@ -72,7 +72,7 @@ const Checkout = () => {
                     Gracias por elegirnos!, <br></br> Tu pedido está siendo despachado,<br></br> el id de tu compra es <br></br>
                     <span className='idFinal'>{orden}</span>
                 </h3>
-                <Link to='/' className='linkCheckOut'><button className='botonGeneral '>Volver al Inicio</button ></Link>
+                <Link to='/' className='linkCheckOut'><button className='botonGeneral btnVolver'>Volver al Inicio</button ></Link>
             </div>
         )
     }
