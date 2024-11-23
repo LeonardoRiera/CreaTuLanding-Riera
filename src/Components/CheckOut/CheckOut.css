@@ -375,8 +375,7 @@
 
 @media screen and (max-width:543px) {
 
-   
-    
+  
     
 }
 
@@ -434,6 +433,14 @@
 /* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/
 
 @media screen and (max-width:394px) {
+
+    /* contenedor gral */
+    .ContainerCheckGral {
+        padding: 4vmax 0;
+        height:90vmax;
+       
+
+    }
     
     .formularioDatosT {
         width: 27vmax;
