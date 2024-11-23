@@ -283,6 +283,7 @@
         width: 54%;
         border-radius: 0 0 10px 10px;
         height: 100%;
+        background-color: #DFDFDF;
     }
 
     .Info {
@@ -358,13 +359,15 @@
 
 /* ++++++++++++++++++++++++ media query  | pantalla movile varias |   ++++++++++++++++++++++++++++++++++*/
 
-@media screen and (max-width:527px) {
+@media screen and (max-width:529px) {
 
     .cardTexto {
         padding: 1.5vmax 1vmax; 
         width: 58%;
         
     }
+
+    
 
     
    
@@ -407,6 +410,25 @@
     }
 }
 
+
+/* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/
+
+@media screen and (max-width:429px) {
+    .cardTexto {
+        padding: 1.5vmax 1vmax; 
+        width: 76%;
+        
+    }
+
+    .ItemImg {
+
+        width: 38vmax;
+        height: 38vmax;
+        
+    }
+
+   
+}
 
 
 /* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/
