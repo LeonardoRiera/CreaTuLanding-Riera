@@ -281,9 +281,11 @@
     .cardTexto {
         padding: 1.5vmax 1vmax; 
         width: 54%;
-        border-radius: 0 0 10px 10px;
+        border-radius:10px;
         height: 100%;
         background-color: #DFDFDF;
+        border: solid 0.5px rgba(0, 0, 0, 0.179);
+        margin-top: 1vmax;
     }
 
     .Info {
@@ -297,7 +299,7 @@
         height: 34vmax;
         align-self: center;
         padding: 4vmax;
-        border-radius: 10px 10px 0 0;
+        border-radius: 10px;
         
     }
 
