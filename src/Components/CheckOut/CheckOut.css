@@ -1,25 +1,40 @@
+
+/* contenedor gral */
+.ContainerCheckGral {
+    height: 60vmax;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+
+}
+
+/* contenedor del elemento */
 .checkoutContainer {
     display: flex;
     flex-flow: row nowrap;
-    margin-top: 10vmax;
-    margin-bottom: 10vmax;
+    margin-top: -3vmax;
+    margin-bottom: 2vmax;
     justify-content: center;
-    height: 35vmax;
-    border-radius: 10px;    
+    height: 35vmax;    
+   
 }
 
+/* contenedor de la parte del formulario */
 .formContainer {
-    margin-left: 2vmax;
-    padding: 20px;
+    padding: 2vmax;
     display: flex;
     flex-flow:column ;
     background-color: rgb(233, 233, 233);
-    width: 35%;
-    border-radius: 10px 0 10px 0;
+    width: 40%;
+    border-radius: 10px 0 0 10px;
+   
 }
 
+/* contenedor de la parte de la foto */
 .complementoForm {
-    width: 35%;
+    width: 40%;
     background: linear-gradient(to right ,#520066, #ff0458 );
     border-radius: 0 10px 10px 0;
     display: flex;
@@ -27,12 +42,13 @@
     align-items: center;
 }
 
+/* titulo */
 .tituloFinDeCompra{
     color: blueviolet;
     margin-bottom: 0.5vmax;
-    width: 30vmax;
+    font-size: 2vmax;
     margin-top: 2vmax;
-    margin-left: 3vmax;
+    margin-left: 2vmax;
 }
 
 /* entrega de id */
@@ -56,9 +72,8 @@
 .form {
     display: flex;
     flex-flow: column nowrap;
-    align-items: start;
-    margin-left: 3vmax;
-    margin-top: 2vmax;    
+    align-items: start; 
+    margin: 0 2vmax 2vmax 2vmax ;  
 }
 
 .formularioDatos {
@@ -75,7 +90,7 @@
 
 .botonFormularioDatos {
     width: 40%;
-    margin: 2vmax 5vmax 0 0;
+   margin-top: 1.5vmax;
    align-self: center;
 }
 
@@ -87,3 +102,337 @@
     background-color: aqua;
     padding: 0.5vmax 1vmax;
 }
+
+
+
+
+
+
+
+
+
+
+/* ++++++++++++++++++++++++ media query |  pantalla gigante |   ++++++++++++++++++++++++++++++++++*/
+
+@media screen and (max-width:2220px) {
+    
+    
+}
+
+
+/* ++++++++++++++++++++++++ media query | pantalla extra extra lg  |   ++++++++++++++++++++++++++++++++++*/
+
+
+
+@media screen and (max-width:1400px) {
+
+   
+  
+    
+}
+
+
+
+/* ++++++++++++++++++++++++ media query | pantalla extra lg   |  ++++++++++++++++++++++++++++++++++*/
+
+
+@media screen and (max-width:1200px) {
+
+   
+}
+
+
+
+/* ++++++++++++++++++++++++ media query | pantalla lg  | ++++++++++++++++++++++++++++++++++*/
+
+
+@media screen and (max-width:992px) {
+
+    .checkoutContainer {
+        margin-top: 4vmax;
+   
+    }
+
+    /* contenedor del elemento */
+    .checkoutContainer {
+        margin-top: 6vmax;
+        height: 40vmax;    
+    
+    }
+
+    .formularioDatosT {
+        margin-bottom: 0.5vmax;
+        width: 30vmax;
+        height: 3vmax;
+        padding: 1vmax;
+        font-size: 1.4vmax;
+    }
+
+   
+
+}
+
+/* ++++++++++++++++++++++++ media query |  pantalla personalizada | ++++++++++++++++++++++++++++++++++*/
+
+
+
+@media screen and (max-width:885px)  {
+
+    .ContainerCheckGral {
+        height: 75vmax;
+    }
+
+    /* contenedor del elemento */
+    .checkoutContainer {
+        margin-top: 6vmax;
+        height: 40vmax;    
+    
+    }
+
+    .formularioDatosT {
+        margin-bottom: 0.5vmax;
+        width: 26vmax;
+      
+    }
+
+    .botonFormularioDatos {
+        font-size: 1.5vmax;
+        width: 50%;
+        margin-top: 2.5vmax;
+       
+    }
+}
+
+/* ++++++++++++++++++++++++ media query |  pantalla personalizada | ++++++++++++++++++++++++++++++++++*/
+
+
+
+@media screen and (max-width:835px)  {
+
+   
+    .formularioDatosT {
+        margin-bottom: 0.5vmax;
+        width: 24vmax;
+        height: 3.2vmax;
+        padding: 1vmax;
+        font-size: 1.4vmax;
+    }
+    
+        
+}
+
+/* ++++++++++++++++++++++++ media query |  pantalla movile varios   | ++++++++++++++++++++++++++++++++++*/
+
+
+
+@media screen and (max-width:820px) {
+
+    .formularioDatosT {
+        margin-bottom: 0.5vmax;
+        width: 22vmax;
+        height: 3.2vmax;
+        padding: 0.5vmax;
+        font-size: 1.4vmax;
+    }
+   
+ 
+}
+
+/* ++++++++++++++++++++++++ media query |  pantalla movile varios   | ++++++++++++++++++++++++++++++++++*/
+
+
+
+@media screen and (max-width:800px) {
+
+   
+   
+ 
+}
+
+
+/* ++++++++++++++++++++++++ media query |  pantalla md   | ++++++++++++++++++++++++++++++++++*/
+
+
+
+@media screen and (max-width:768px) {
+
+   
+    .formularioDatosT {
+        margin-bottom: 0.5vmax;
+        width: 25vmax;
+        height: 3.5vmax;
+        padding: 0.5vmax;
+        font-size: 1.4vmax;
+    }
+   
+    
+  
+}
+
+/* ++++++++++++++++++++++++ media query |  pantalla personalizada   | ++++++++++++++++++++++++++++++++++*/
+
+@media screen and (max-width:600px) {
+
+   
+    /* contenedor del elemento */
+    .checkoutContainer {
+        flex-direction: column-reverse;
+        margin-top: 8vmax;
+        margin-bottom: 2vmax;
+        align-items: center;
+        justify-content: center;
+        height: 35vmax;    
+    
+    }
+
+    /* contenedor de la parte de la foto */
+    .complementoForm {
+        width: 60%;
+        border-radius:  10px 10px 0 0;
+    }
+
+    .solologo {
+        width:40%;
+        padding: 1vmax;
+    }
+
+    /* contenedor de la parte del formulario */
+    .formContainer {
+        padding: 2vmax;
+        width: 60%;
+        border-radius: 0 0 10px 10px;
+        
+    
+    }
+    .form {
+        align-self: center;
+    }
+
+    .formularioDatosT {
+        
+        height: 4vmax;
+       
+    }
+   
+        
+    
+ 
+}
+
+
+
+
+/* ++++++++++++++++++++++++ media query |  pantalla sm   | ++++++++++++++++++++++++++++++++++*/
+
+@media screen and (max-width:573px) {
+
+    .formularioDatosT {
+        width: 28vmax;
+    }    
+    
+
+}
+
+/* ++++++++++++++++++++++++ media query  | pantalla personal |   ++++++++++++++++++++++++++++++++++*/
+
+@media screen and (max-width:543px) {
+
+   
+    
+    
+}
+
+
+/* ++++++++++++++++++++++++ media query  | pantalla movile varias |   ++++++++++++++++++++++++++++++++++*/
+
+@media screen and (max-width:481px) {
+
+    /* contenedor de la parte del formulario */
+    .formContainer {
+        padding: 2vmax;
+        width: 70%;
+       
+    
+    }
+
+    /* contenedor de la parte de la foto */
+    .complementoForm {
+        width: 70%;
+        
+    }
+
+    .formularioDatosT {
+        width: 24vmax;
+    }    
+    
+}
+
+/* ++++++++++++++++++++++++ media query  | pantalla moviles varios |   ++++++++++++++++++++++++++++++++++*/
+
+@media screen and (max-width:469px) {
+
+    .formularioDatosT {
+        width: 32vmax;
+        height: 4vmax;
+    }    
+    
+    
+}
+
+/* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/
+
+@media screen and (max-width:431px) {
+    
+    .formularioDatosT {
+        width: 24vmax;
+        height: 4vmax;
+    }    
+    
+    
+}
+
+
+/* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/
+
+@media screen and (max-width:394px) {
+    
+    .formularioDatosT {
+        width: 27vmax;
+        height: 4vmax;
+    }    
+    
+    
+}
+
+/* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/
+
+@media screen and (max-width:361px) {
+   
+    .formularioDatosT {
+        width: 26vmax;
+        height: 4vmax;
+    } 
+ 
+    
+}  
+
+
+/* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/
+
+@media screen and (max-width:325px) {
+  
+    /* contenedor gral */
+    .ContainerCheckGral {
+        height: 110vmax;
+       
+
+    }
+
+    .formularioDatosT {
+        width: 40vmax;
+        height: 8vmax;
+    } 
+
+}  
+
+

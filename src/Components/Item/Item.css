@@ -94,7 +94,7 @@
         margin: 1vmax;
         padding: 2cqh;
         width: 30vmax;
-        height: 35vmax;
+        height: 38vmax;
          
     }
         
@@ -107,10 +107,8 @@
 @media screen and (max-width:835px)  {
 
     .CardItem {
-        margin: 1vmax;
-        padding: 2cqh;
         width: 26vmax;
-        height: 35vmax;
+        height: 38vmax;
          
     }
     
@@ -141,7 +139,7 @@
         margin: 2vmax;
         padding: 2cqh;
         width: 30vmax;
-        height: 35vmax;
+        height: 38vmax;
         z-index: 2;
          
     }

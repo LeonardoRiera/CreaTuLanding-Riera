@@ -4,6 +4,24 @@
     padding: 0.5vmax;
 }
 
+.textoCarrito {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1.5vmax;
+}
+
+.textoCarrito p {
+    margin: 0;
+    
+}
+
+.textoCarrito h2 {
+    margin: 0;
+    font-size: 2vmax;
+    
+}
+
 .cardItemContainer {
     width: 80%;
     display: flex;
@@ -49,7 +67,11 @@
 
 @media screen and (max-width:1200px) {
 
-   
+    .cardItemContainer {
+        width: 90%;
+       
+    }
+    
 }
 
 
@@ -59,7 +81,29 @@
 
 @media screen and (max-width:992px) {
 
-   
+    .cardItemContainer {
+        width: 80%;
+        margin-top: 5px;
+        height: 22vmax;
+       
+    }
+
+    .textoCarrito {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 1vmax;
+    }
+
+    .cardItemContainer img {
+        width:15vmax;
+    }
+
+    .btnCard {
+        padding: 0.8vmax 6vmax !important;
+    }
+    
 
 }
 
@@ -78,10 +122,12 @@
 
 
 
-@media screen and (max-width:835px)  {
+@media screen and (max-width:821px)  {
 
    
-    
+    .cardItemContainer img {
+        width:17vmax;
+    }
     
     
         
@@ -154,9 +200,25 @@
 
 /* ++++++++++++++++++++++++ media query  | pantalla movile varias |   ++++++++++++++++++++++++++++++++++*/
 
-@media screen and (max-width:481px) {
+@media screen and (max-width:500px) {
 
-    
+    .cardItemContainer {
+        width: 80%;
+        margin-top: 5px;
+        height: 42vmax;
+        flex-flow: column nowrap;
+       
+    }
+
+   
+
+    .cardItemContainer img {
+        width:14vmax;
+    }
+
+    .btnCard {
+        font-size: 1.6vmax !important;
+    }
    
 }
 
@@ -180,7 +242,13 @@
 
 @media screen and (max-width:325px) {
    
-    
+    .cardItemContainer {
+        width: 80%;
+        margin-top: 5px;
+        height: 48vmax;
+        flex-flow: column nowrap;
+       
+    }
  
     
 }  

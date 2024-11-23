@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { CartContext } from "../../Contex/CartContex";
 import CardItem from "../CardItem/CardItem";
 import './Cart.css';
@@ -7,11 +7,16 @@ import { Link } from "react-router-dom";
 
 const Cart = () => {
 
+    // Este useEffect asegura que la página se desplace hacia arriba al cargar el componente, me encanto!!
+    useEffect(() => {
+        window.scrollTo(0, 0);
+        }, []); // El array vacío indica que se ejecutará solo al montar el componente
+
     const { cart, vaciarCarrito, mostrarTotal } = useContext(CartContext)
 
     return (
         <div className="cartContainerPrincipal">
-            <h4 className="carrito">Carrito de Compras</h4>
+            <h4 className="carrito2">Carrito de Compras</h4>
             {
                 cart?.map(e=> {
                     return (
@@ -30,7 +35,7 @@ const Cart = () => {
                         <img src={tarjetas} alt="tarjetas" className="tarjetas" />
                     </div>
 
-                    <Link to='/CheckOut'><button className="botonComprar botonGeneral">Comprar</button></Link>
+                    <Link to='/CheckOut'><button className="botonComprar botonGeneral btnCompra">Comprar</button></Link>
                 </div>
                 : 
                 <>

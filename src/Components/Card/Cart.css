@@ -21,7 +21,7 @@
   margin:25px 10px 10px 10px;    
 }
 
-.carrito {
+.carrito2 {
   font-size: 4vmax;
   margin: 2vmax 0;
 }
@@ -206,7 +206,10 @@
 
 @media screen and (max-width:992px) {
 
-   
+  .cartContainerPrincipal {
+    margin-top: 8vmax;
+    margin-bottom: 5vmax;
+  }
 
 }
 
@@ -216,7 +219,15 @@
 
 @media screen and (max-width:885px)  {
 
-   
+  .btnCompra {
+    padding: 1vmax 6vmax !important;
+    font-size: 2vmax;
+  }
+
+  .tarjetas {
+    width: 18vmax;
+      
+  }
 }
 
 /* ++++++++++++++++++++++++ media query |  pantalla personalizada | ++++++++++++++++++++++++++++++++++*/

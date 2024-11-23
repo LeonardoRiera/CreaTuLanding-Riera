@@ -79,29 +79,32 @@ const Checkout = () => {
 
 
     return (
-        <div className='checkoutContainer'>
+        <div className='ContainerCheckGral'>
+            <div className='checkoutContainer'>
            
-            <div className='formContainer'>
-                <h3 className='tituloFinDeCompra'>Ingresa los datos para terminar tu compra</h3>
+                <div className='formContainer'>
+                    <h3 className='tituloFinDeCompra'>Ingresa los datos para terminar tu compra</h3>
 
-                <form className='form' onSubmit={(e) => handleSubmit(e)}>
+                    <form className='form' onSubmit={(e) => handleSubmit(e)}>
 
-                    <label htmlFor="nombre" className='formularioDatos'>  Nombre  </label>
-                    <input type="text" name='nombre'  onChange={(e) => setNombre(e.target.value)} className='formularioDatosT' />
-                    <label htmlFor="email" className='formularioDatos'>  Email  </label>
-                    <input type="email" name='email' onChange={(e) => setMail(e.target.value)} className='formularioDatosT' />
-                    <label htmlFor="direccion" className='formularioDatos'> Dirección </label>
-                    <input type="text" name='direccion' onChange={(e) => setDireccion(e.target.value)}  className='formularioDatosT'/>
-                    {error && <p className="error-message">{error}</p>}
-                    <button type='submit' disabled={isSubmiting} className='botonFormularioDatos botonGeneral' > Enviar </button>
-                    
-                </form>
+                        <label htmlFor="nombre" className='formularioDatos'>  Nombre  </label>
+                        <input type="text" name='nombre'  onChange={(e) => setNombre(e.target.value)} className='formularioDatosT' />
+                        <label htmlFor="email" className='formularioDatos'>  Email  </label>
+                        <input type="email" name='email' onChange={(e) => setMail(e.target.value)} className='formularioDatosT' />
+                        <label htmlFor="direccion" className='formularioDatos'> Dirección </label>
+                        <input type="text" name='direccion' onChange={(e) => setDireccion(e.target.value)}  className='formularioDatosT'/>
+                        {error && <p className="error-message">{error}</p>}
+                        <button type='submit' disabled={isSubmiting} className='botonFormularioDatos botonGeneral' > Enviar </button>
+                        
+                    </form>
+                </div>
+
+                <div className='complementoForm'>
+                    <img src={solologo} alt="logo solo" className='solologo' />
+                </div>
+
             </div>
-
-            <div className='complementoForm'>
-                <img src={solologo} alt="logo solo" className='solologo' />
-            </div>
-        </div>
+       </div>
     )
 }
 

@@ -164,7 +164,6 @@
         flex-direction: column;
         justify-content:center;
         align-items: center;
-        background-color: rgb(223, 223, 223);
         width: 100%;
         margin-top: 5vmax; 
         padding: 11vmax 0;  
@@ -173,6 +172,16 @@
 
     .botonProd {    
         margin: -2vmax 0 5vmax 28vmax;
+    }
+
+    .ItemImg {
+        height: 32vmax;
+        width: auto;
+         
+    }
+
+    .cardTexto {
+        height: 32vmax;
     }
     
         
@@ -184,7 +193,16 @@
 
 @media screen and (max-width:835px)  {
 
-   
+    .ItemImg {
+        height: 33vmax;
+        width: auto;
+         
+    }
+
+    .cardTexto {
+        height: 33vmax;
+    }
+    
     
     
     
