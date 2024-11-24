@@ -9,8 +9,6 @@ import { NavLink, Link } from "react-router-dom";
 function Navbar() {
     return (
        
-
-       
         <nav class="navbar navbar-expand-lg navbar-contenedor ">
             <div class="container-fluid">
                 <Link to='/' class="navbar-brand" href="#">
