@@ -1,6 +1,6 @@
-# Mi Proyecto Portfolio
+# Mi Proyecto e-commerce
 
-Este proyecto está creado con React y Vite. Proyecto que conecta con mis trabajos de presentación y además con link de descarga de mi CV
+Este proyecto está creado con React y Vite. proyecto e-commerce para final de CoderHouse carrera "developer frontend react"
 
 ## Tecnologías utilizadas
 - React
